@@ -65,3 +65,15 @@
     object-fit: cover;
     height: 100%;
 }
+
+.griefwrapper {
+    height:346.05px;
+    overflow: hidden;
+    
+    
+}
+
+.griefwrapper img {
+    object-fit: cover;
+    height: 100%;
+}
