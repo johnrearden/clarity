@@ -18,3 +18,24 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+/* EMOTIONS */
+
+.emotions h2 {
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 0;
+    
+}
+
+.stresswrapper {
+    height:346px;
+    overflow: hidden;
+    
+    
+}
+
+.stresswrapper img {
+    object-fit: cover;
+    height: 100%;
+}
