@@ -53,3 +53,15 @@
     object-fit: cover;
     height: 100%;
 }
+
+.depressionwrapper {
+    height:346.05px;
+    overflow: hidden;
+    
+    
+}
+
+.depressionwrapper img {
+    object-fit: cover;
+    height: 100%;
+}
