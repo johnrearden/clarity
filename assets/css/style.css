@@ -5,3 +5,16 @@
 
 
 }
+/* NAV */
+
+
+
+/* JUMBOTRON */
+
+.bpsky {
+    background-image: url(/assets/images/bluepinksky.jpg);
+    background-size: cover;
+    background-position: center -100px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
