@@ -537,3 +537,8 @@ Deeper Blue: #5E9DC8
 
 This color scheme provides a balance of calming blues and soothing pinks, with neutral tones to ensure readability and a clean design. The deeper blue can be used for interactive elements to provide clear visual cues for users.
 
+
+
+
+
+

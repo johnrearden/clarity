@@ -1,12 +1,27 @@
 /* IMG */
 
 #logo {
-    height:70px
-
-
+    height: 75px
 }
+
 /* NAV */
 
+.navbox {
+    padding-left: 5px;
+}
+
+#menubtn {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar-toggler {
+    padding: 0;
+}
+.emonav:hover {
+    color: red;
+
+}
 
 
 /* JUMBOTRON */
@@ -17,33 +32,44 @@
     background-position: center -100px;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: 20px
 }
 
-/* EMOTIONS */
+/* EMOTION CARDS */
 
 .emotions h2 {
     text-align: center;
     margin-top: 18px;
     padding-bottom: 0;
     margin-bottom: 0;
+
+}
+
+.card {
+    margin-bottom: 30px;
+    box-shadow: 0 5px 9px 0 rgba(59, 59, 59, 0.2);
+    background-color: #77a7af24;
     
+
 }
 
 .card-text {
     text-align: center;
+    margin: 0 10 10 10px;
+    font-size: 0.9rem;
+    
 }
 
 /* CARD IMAGE WRAPPERS */
 
 .imgwrapper {
-    height:346.05px;
+    height: 346.05px;
     overflow: hidden;
-    
-    
+
+
 }
 
 .imgwrapper img {
     object-fit: cover;
     height: 100%;
 }
-
