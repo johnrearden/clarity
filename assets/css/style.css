@@ -35,50 +35,15 @@
 
 /* CARD IMAGE WRAPPERS */
 
-.stresswrapper {
+.imgwrapper {
     height:346.05px;
     overflow: hidden;
     
     
 }
 
-.stresswrapper img {
+.imgwrapper img {
     object-fit: cover;
     height: 100%;
 }
 
-.angerwrapper {
-    height:346.05px;
-    overflow: hidden;
-    
-    
-}
-
-.angerwrapper img {
-    object-fit: cover;
-    height: 100%;
-}
-
-.depressionwrapper {
-    height:346.05px;
-    overflow: hidden;
-    
-    
-}
-
-.depressionwrapper img {
-    object-fit: cover;
-    height: 100%;
-}
-
-.griefwrapper {
-    height:346.05px;
-    overflow: hidden;
-    
-    
-}
-
-.griefwrapper img {
-    object-fit: cover;
-    height: 100%;
-}
