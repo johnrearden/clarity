@@ -28,14 +28,28 @@
     
 }
 
+/* CARD IMAGE WRAPPERS */
+
 .stresswrapper {
-    height:346px;
+    height:346.05px;
     overflow: hidden;
     
     
 }
 
 .stresswrapper img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.angerwrapper {
+    height:346.05px;
+    overflow: hidden;
+    
+    
+}
+
+.angerwrapper img {
     object-fit: cover;
     height: 100%;
 }
