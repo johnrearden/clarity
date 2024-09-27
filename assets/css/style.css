@@ -1,3 +1,11 @@
+/* BODY */
+body {
+    background-color: rgb(254, 248, 250);
+}
+
+
+
+
 /* IMG */
 
 #logo {
@@ -8,6 +16,9 @@
 
 .navbox {
     padding-left: 5px;
+    /* position: fixed;
+    z-index: 1000; */
+    
 }
 
 #menubtn {
@@ -22,8 +33,10 @@
     color: red;
 
 }
+
+/* PAD NAV LINKS */
 .navbar-nav .nav-link {
-    padding:10px
+    padding:15px
 }
 
 
@@ -35,14 +48,23 @@
     background-position: center -100px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 20px
+    
+}
+
+.jumbotron {
+    margin-bottom: 10px;
 }
 
 
 /* EMOTION SECTION */
 
+.card {
+    border: none;
+}
+
 .emotions h3 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-size:1.3rem;
     font-weight: 100;
     text-align: center;
@@ -51,6 +73,11 @@
 .emotions {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+#howtext
+{
+    margin-bottom: 30px;
 }
 /* EMOTION CARDS */
 
@@ -89,4 +116,15 @@
 .imgwrapper img {
     object-fit: cover;
     height: 100%;
+}
+
+
+/* CAROUSEL */
+
+.carousel {
+    
+}
+
+.carouselheading {
+    text-align: center;
 }
