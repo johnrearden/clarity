@@ -90,7 +90,7 @@ body {
 }
 
 .card {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     box-shadow: 0 5px 9px 0 rgba(59, 59, 59, 0.2);
     background-color: #77a7af24;
     
@@ -121,10 +121,37 @@ body {
 
 /* CAROUSEL */
 
-.carousel {
-    
-}
 
 .carouselheading {
     text-align: center;
 }
+
+
+
+
+/* MEDIA QUERY FOR TABLETS AND ABOVE */
+
+@media screen and (min-width: 768px) {
+    
+
+    /* CHANGE CARUSEL IMAGE WHEN ON TABLET AND ABOVE */
+    .car-image-1 {
+        content: url("/assets/images/coping-strategies/1.png")
+
+    }
+
+    .car-image-2 {
+        content: url("/assets/images/coping-strategies/3.png")
+
+    }
+    .car-image-3 {
+        content: url("/assets/images/coping-strategies/2.png")
+
+    }
+    .car-image-4 {
+        content: url("/assets/images/coping-strategies/4.png")
+
+    }
+
+  }
+

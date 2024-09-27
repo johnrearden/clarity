@@ -41,11 +41,11 @@ Surface:
 - Design visual elements (cards, buttons, form) that convey a supportive atmosphere
 
 User Stories:
-1. Implement Emotion Information Section
-2. Develop Coping Strategies Section
+
+
 3. Create Mindfulness Resources Section
 4. Design and Implement Contact Form
-5. Ensure Intuitive Navigation
+
 6. Apply Supportive Design Principles
 7. Implement Responsive Design
 8. Add External Resources Section
@@ -63,9 +63,11 @@ Strucure:
 
 - Design wireframes incorporating all key sections
 
+User Stories:
 
-
-
+1. Implement Emotion Information Section
+2. Develop Coping Strategies Section
+5. Ensure Intuitive Navigation
 
 
 
