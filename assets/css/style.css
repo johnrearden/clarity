@@ -60,11 +60,12 @@ body {
 
 .card {
     border: none;
+
 }
 
 .emotions h3 {
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size:1.3rem;
     font-weight: 100;
     text-align: center;
@@ -75,9 +76,9 @@ body {
     padding-right: 15px;
 }
 
-#howtext
-{
-    margin-bottom: 30px;
+#howtext  {
+    margin-bottom: 60px;
+    margin-top: 20px;
 }
 /* EMOTION CARDS */
 
@@ -118,6 +119,17 @@ body {
     height: 100%;
 }
 
+
+/* COPING STATEGIES */
+
+.cope h3 {
+    margin-bottom: 60px;
+    font-size:1.3rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 30px;
+
+}
 
 /* CAROUSEL */
 
