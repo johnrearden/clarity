@@ -22,6 +22,9 @@
     color: red;
 
 }
+.navbar-nav .nav-link {
+    padding:10px
+}
 
 
 /* JUMBOTRON */
@@ -38,8 +41,16 @@
 
 /* EMOTION SECTION */
 
+.emotions h3 {
+    margin-bottom: 40px;
+    font-size:1.3rem;
+    font-weight: 100;
+    text-align: center;
+}
+
 .emotions {
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /* EMOTION CARDS */
 
