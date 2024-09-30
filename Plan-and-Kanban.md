@@ -1,8 +1,32 @@
 
 -----------------------------------BRIEF CRITERIA AND MVP TASKS (INCOMPLETE)---------------------------------------
 
-User Story:
+
+Brief Criteria
+
+Project 4: Mental Health Awareness
+External User’s Goal:
+The user seeks accessible, beginner-friendly information on mental health, including how to recognize 
+common issues and manage stress, presented in a supportive and organised layout.
+Site Owner’s Goal:
+The site owner wants to create a welcoming webpage that provides basic mental health information 
+using a clean and supportive design. The focus is on using HTML and CSS with Bootstrap to create a 
+calming and well-organised user experience.
+Main - User Story:
 As a user, I want to see a hero section with positive messaging so that I feel welcomed and encouraged.
+
+
+
+
+Learning outcomes
+LO1 Learners will be able to design and implement a one-page interactive front-end web 
+application using HTML and CSS based on user experience design principles, accessibility, and 
+responsiveness.
+LO2 Learners will be able to test and validate the one-page web application through the 
+development, implementation, and deployment stages.
+LO3 Learners will be able to deploy the one-page web application to a cloud platform.
+LO4  Learners will be able to maximise future maintainability through documentation, code 
+structure, and organisation.
 
 Acceptance Criteria:
 - Hero section uses Bootstrap Jumbotron
@@ -30,25 +54,14 @@ Scope:
 
 Structure:
 
-
-
 Skeleton:
 
-
-
 Surface:
-- Choose calming color scheme and typography
-- Design visual elements (cards, buttons, form) that convey a supportive atmosphere
 
-User Stories:
+Product development - User Stories Functionality:
 
-
-3. Create Mindfulness Resources Section
 4. Design and Implement Contact Form
 
-6. Apply Supportive Design Principles
-7. Implement Responsive Design
-8. Add External Resources Section
 
 
 
@@ -60,14 +73,15 @@ Scope:
 
 Strucure:
 
+Skelton:
 
-- Design wireframes incorporating all key sections
 
-User Stories:
 
-1. Implement Emotion Information Section
-2. Develop Coping Strategies Section
-5. Ensure Intuitive Navigation
+
+Product development - User Stories functionality:
+
+
+8. Add External Resources Section
 
 
 
@@ -76,8 +90,30 @@ User Stories:
 
 [Review]
 
-Strategy: Define project objectives and user needs
+
+
+
+
+
+
+
+
+
+
+Product development - User Stories functionality:
+
+1. Implement Emotion Information Section
+3. Create Mindfulness Resources Section
+7. Implement Responsive Design
+6. Apply Supportive Design Principles
+2. Develop Coping Strategies Section
+5. Ensure Intuitive Navigation
+
+[Done]
+
 Strategy: Create user stories
+Strategy: Define project objectives and user needs
+
 
 Scope: Outline content requirements
 Scope: Define core features based on user stories
@@ -85,16 +121,19 @@ Scope: Outline content requirements for emotion information and coping strategie
 Scope: Define nice-to-have features for future development.
 Scope: Curate list of reputable external mental health resources.
 
+
+
 Structure: - Plan smooth navigation within the single page
 Structure: - Create site map for single-page layout
 Structure: - Plan information architecture to present emotional information effectively
-Structure: - Design wireframes incorporating all key sections
+ 
 
+Skeleton: - Design wireframes incorporating all key sections
 
-[Done]
+Surface - Choose calming color scheme and typography
+SUrface - Design visual elements (cards, buttons, form) that convey a supportive atmosphere 
 
-
-
+Product development - User story functionality:
 
 
 
@@ -434,6 +473,8 @@ ARCHITECTURE -------------------------------------------------------------------
 
 [Footer]
 
+-----------------------------------SKELETON-----------------------------------------
+
 WIREFRAMES------------------------------------------------------------------------
 
 MOBILE-----------------------------------------------------------------------------
@@ -500,6 +541,8 @@ DESKTOP-------------------------------------------------------------------------
 [Quick Links]        [Copyright]        [Privacy Policy]
 
 
+
+-----------------------------SURFACE---------------------------------------------
 
 
 Colors:

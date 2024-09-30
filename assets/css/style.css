@@ -29,7 +29,7 @@ body {
 
 
 #logo {
-    height: 75px
+    height: 65px
 }
 
 
@@ -48,7 +48,11 @@ body {
     padding-top: 0;
     padding-bottom: 0;
 
+}
 
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 #menubtn {
@@ -80,7 +84,7 @@ body {
 
 .jumbotron {
     margin-bottom: 10px;
-    margin-top: 85px  /*MAKE JUMBOTRON SIT JUST ON EDGE OF NAVBAR*/
+    margin-top: 65px  /*MAKE JUMBOTRON SIT JUST ON EDGE OF NAVBAR*/
 }
 
 
@@ -181,7 +185,6 @@ body {
 .nav-tabs .nav-link.active {
     background-color: #95cfd945;
    
-
 }
 
 .mindfulness h3 {
@@ -227,6 +230,14 @@ body {
 
 
 /* TABS */
+
+#resources btn-link {
+    color: black;
+}
+
+
+
+
 
 
 

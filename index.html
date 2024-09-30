@@ -10,6 +10,7 @@
         Expert advice on managing emotions and improving wellbeing.">
     <meta name="keywords" content="mental health, coping, wellness, therapy, support, counseling, emotions">
     <meta name="Guy Clements" content="Guy Clements- GuyAi">
+
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -23,43 +24,44 @@
 <body>
 
     <!-- NAV -->
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbox">
-            <span class="navbar-brand mb-0 h1">
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbox">
+                <span class="navbar-brand mb-0 h1">
 
-                <a href="#home"><img id="logo" src="assets/images/Clarity.svg"></a>
-            </span>
+                    <a href="#home"><img id="logo" src="assets/images/Clarity.svg"></a>
+                </span>
 
-            <!-- HAMBURGER -->
-            <button class="navbar-toggler" id="menubtn" type="button" data-toggle="collapse"
-                data-target="#navbarElements" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- HAMBURGER -->
+                <button class="navbar-toggler" id="menubtn" type="button" data-toggle="collapse"
+                    data-target="#navbarElements" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- NAVBAR ELEMENTS -->
-            <div class="collapse navbar-collapse" id="navbarElements">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active navbtns" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbtns" href="#emotions">Emotions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbtns" href="#cope">How to Cope</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbtns" href="#mindfulness">Mindfulness</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbtns" href="#resources">Resources</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
+                <!-- NAVBAR ELEMENTS -->
+                <div class="collapse navbar-collapse" id="navbarElements">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active navbtns" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbtns" href="#emotions">Emotions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbtns" href="#cope">How to Cope</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbtns" href="#mindfulness">Mindfulness</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbtns" href="#resources">Resources</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
     <!-- MAIN -->
     <main>
         <!-- HOME -->
@@ -300,14 +302,15 @@
             </div>
 
         </section>
-        
+
         <hr>
 
         <!-- MINDFULNESS -->
         <section class="mindfulness py-3 py-md-5" id="mindfulness">
             <div class="container">
-                
-                <h3>As touched on in our coping strategies section, mindfulness
+
+                <h3>We briefly touched upon mindfulness in our coping strategies section. While coping strategies are a
+                    great way to deal with present emotional issues, mindfulness
                     can provide a long-term approach to emotional regulation.</h3>
                 <h3>It teaches us to observe our thoughts and feelings without judgment, fostering a deeper
                     understanding of our emotional landscape and promoting lasting resilience.</h3>
@@ -410,7 +413,31 @@
                 <div class="row">
                     <div class="col">
                         <div class="accordion" id="resourcesAccordion">
-                            <div class="card">
+                            <!-- AS THE FOLLOWING CONTENT IS REPETETIVE, I ONLY CREATED THE FIRST ACCORDION ELEMENT WHICH I THEN GAVE TO CLAUDE AI AS A TEMPLATE TO CREATE THE REST -->
+                            <!-- Samaritans -->
+                            <div class="card mb-3">
+                                <div class="card-header" id="headingSamaritans">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-center" type="button"
+                                            data-toggle="collapse" data-target="#collapseSamaritans"
+                                            aria-expanded="false" aria-controls="collapseSamaritans">
+                                            Samaritans
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseSamaritans" class="collapse" aria-labelledby="headingSamaritans"
+                                    data-parent="#resourcesAccordion">
+                                    <div class="card-body">
+                                        <p>24/7 listening service providing emotional support to anyone in distress.</p>
+                                        <p>Phone: 116 123</p>
+                                        <p>Website: <a href="https://www.samaritans.org"
+                                                target="_blank">www.samaritans.org</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mind -->
+                            <div class="card mb-3">
                                 <div class="card-header" id="headingMind">
                                     <h2 class="mb-0">
                                         <button class="btn btn-link btn-block text-center collapsed" type="button"
@@ -431,7 +458,8 @@
                                 </div>
                             </div>
 
-                            <div class="card">
+                            <!-- NHS Mental Health Services -->
+                            <div class="card mb-3">
                                 <div class="card-header" id="headingNHS">
                                     <h2 class="mb-0">
                                         <button class="btn btn-link btn-block text-center collapsed" type="button"
@@ -451,34 +479,80 @@
                                 </div>
                             </div>
 
-                            <div class="card">
-                                <div class="card-header" id="headingSamaritans">
+                            <!-- Young Minds -->
+                            <div class="card mb-3">
+                                <div class="card-header" id="headingYoungMinds">
                                     <h2 class="mb-0">
                                         <button class="btn btn-link btn-block text-center collapsed" type="button"
-                                            data-toggle="collapse" data-target="#collapseSamaritans"
-                                            aria-expanded="false" aria-controls="collapseSamaritans">
-                                            Samaritans
+                                            data-toggle="collapse" data-target="#collapseYoungMinds"
+                                            aria-expanded="false" aria-controls="collapseYoungMinds">
+                                            Young Minds
                                         </button>
                                     </h2>
                                 </div>
-                                <div id="collapseSamaritans" class="collapse" aria-labelledby="headingSamaritans"
+                                <div id="collapseYoungMinds" class="collapse" aria-labelledby="headingYoungMinds"
                                     data-parent="#resourcesAccordion">
                                     <div class="card-body">
-                                        <p>24/7 listening service providing emotional support to anyone in distress.</p>
-                                        <p>Phone: 116 123</p>
-                                        <p>Website: <a href="https://www.samaritans.org"
-                                                target="_blank">www.samaritans.org</a></p>
+                                        <p>UK's leading charity fighting for children and young people's mental health.
+                                        </p>
+                                        <p>Website: <a href="https://www.youngminds.org.uk"
+                                                target="_blank">www.youngminds.org.uk</a></p>
                                     </div>
                                 </div>
                             </div>
-                            
 
-                           
+                            <!-- Anxiety UK -->
+                            <div class="card mb-3">
+                                <div class="card-header" id="headingAnxietyUK">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-center collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseAnxietyUK"
+                                            aria-expanded="false" aria-controls="collapseAnxietyUK">
+                                            Anxiety UK
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseAnxietyUK" class="collapse" aria-labelledby="headingAnxietyUK"
+                                    data-parent="#resourcesAccordion">
+                                    <div class="card-body">
+                                        <p>Provides support for those living with anxiety and anxiety-based depression.
+                                        </p>
+                                        <p>Website: <a href="https://www.anxietyuk.org.uk"
+                                                target="_blank">www.anxietyuk.org.uk</a></p>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <!-- BACP -->
+                            <div class="card">
+                                <div class="card-header" id="headingBACP">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-center collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseBACP" aria-expanded="false"
+                                            aria-controls="collapseBACP">
+                                            British Association for Counselling and Psychotherapy (BACP)
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseBACP" class="collapse" aria-labelledby="headingBACP"
+                                    data-parent="#resourcesAccordion">
+                                    <div class="card-body">
+                                        <p>Provides information about counselling and psychotherapy, including a
+                                            therapist directory.</p>
+                                        <p>Website: <a href="https://www.bacp.co.uk" target="_blank">www.bacp.co.uk</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
+
+
+
                     </div>
+
                 </div>
+            </div>
             </div>
 
         </section>
