@@ -424,11 +424,11 @@ ARCHITECTURE -------------------------------------------------------------------
 
 [Card Deck: Emotion Information]
 
-[Accordion: Coping Strategies]
+[Accordion: Coping Strategies] - After more detailed wireframing this became a carousel
 
 [Tabs: Mindfulness Center]
 
-[Responsive Table: External Resources]
+[Responsive Table: External Resources]  - Could use table or accordion for this now
 
 [Button to trigger Modal Contact Form]
 
