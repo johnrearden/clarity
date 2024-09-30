@@ -165,9 +165,11 @@ Getting started with your Portfolio Projects can be daunting, planning your proj
 
 ## Planning
 
-I decide to proceed in planning this project in conversation with Anthropic's Claude Ai. I chose to do this as i find that ideas flow more easily in coversation, and this method gives me a solid foundation and permanent record that can be built upon, edited easily and re-used as a template for future projects.
+I decide to proceed in planning this project in conversation with Anthropic's Claude Ai. I chose to do this as i find that ideas flow more easily in conversation and Claude can handle all content creation. By using Claude t handle botht he plan and content i can be sure it the context it needs so that both elements will be aligned with each other. This method gives me a solid foundation and permanent record that can be built upon, edited easily and re-used as a template for future projects.
 
 I began by providing it a flow chart i had made on UX/UI design and the project idea and brief criteria. We discussed each part of the design process from User stories and the strategy plane, to the surface plane and user testing. We then created a document that housed a rudimentary kanban board with list of to-do's in each plane that can be used to track my progress. 
+
+I then moved through each stage of the process conversing with Claude regarding content, functionality and implementation. It is promopted to acts as a tutor and give guidance, but not create code unless asked to teach me how certain structures and components operate.
 
 The flow chart on UX design can be found here - [UX flow chart](https://guymitchy.github.io/UX-Flow/)
 
