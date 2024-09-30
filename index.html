@@ -300,11 +300,13 @@
             </div>
 
         </section>
+        
+        <hr>
 
         <!-- MINDFULNESS -->
         <section class="mindfulness py-3 py-md-5" id="mindfulness">
             <div class="container">
-                <hr>
+                
                 <h3>As touched on in our coping strategies section, mindfulness
                     can provide a long-term approach to emotional regulation.</h3>
                 <h3>It teaches us to observe our thoughts and feelings without judgment, fostering a deeper
@@ -401,11 +403,78 @@
                 </div>
             </div>
         </section>
+        <hr>
         <!-- RESOURCES -->
         <section class="resources py-3 py-md-5" id="resources">
             <div class="container">
                 <div class="row">
                     <div class="col">
+                        <div class="accordion" id="resourcesAccordion">
+                            <div class="card">
+                                <div class="card-header" id="headingMind">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseMind" aria-expanded="true"
+                                            aria-controls="collapseMind">
+                                            Mind
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseMind" class="collapse show" aria-labelledby="headingMind"
+                                    data-parent="#resourcesAccordion">
+                                    <div class="card-body">
+                                        <p>Provides advice and support to empower anyone experiencing a mental health
+                                            problem.</p>
+                                        <p>Website: <a href="https://www.mind.org.uk"
+                                                target="_blank">www.mind.org.uk</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingNHS">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseNHS" aria-expanded="false"
+                                            aria-controls="collapseNHS">
+                                            NHS Mental Health Services
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseNHS" class="collapse" aria-labelledby="headingNHS"
+                                    data-parent="#resourcesAccordion">
+                                    <div class="card-body">
+                                        <p>Offers information on conditions, treatments, and where to get help.</p>
+                                        <p>Website: <a href="https://www.nhs.uk/mental-health/"
+                                                target="_blank">www.nhs.uk/mental-health/</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingSamaritans">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseSamaritans"
+                                            aria-expanded="false" aria-controls="collapseSamaritans">
+                                            Samaritans
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseSamaritans" class="collapse" aria-labelledby="headingSamaritans"
+                                    data-parent="#resourcesAccordion">
+                                    <div class="card-body">
+                                        <p>24/7 listening service providing emotional support to anyone in distress.</p>
+                                        <p>Phone: 116 123</p>
+                                        <p>Website: <a href="https://www.samaritans.org"
+                                                target="_blank">www.samaritans.org</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Add more card elements for the remaining resources -->
+
+                        </div>
 
                     </div>
                 </div>
@@ -450,7 +519,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             // Function to adjust scroll position
             function adjustScroll(hash) {
-                const navbar = document.querySelector('nav'); // Adjust this selector to match your navbar
+                const navbar = document.querySelector('nav');
                 const target = document.querySelector(hash);
                 if (target && navbar) {
                     const navbarHeight = navbar.offsetHeight;
