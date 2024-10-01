@@ -21,3 +21,5 @@ Deployed images arent showing and file sizes too large - DISPLAY FIXED FILES STI
 RSVP show as title of form
 
 Have to hard reload for swipe to work on mobile emulator in dev tools?
+
+No swipe on some devices. Did work at one point most likely additions to the java.
