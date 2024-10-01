@@ -169,10 +169,10 @@ h3 {
 .image-track-container {
     position: relative;
     width: 100%;
-    height: 70vh; /* Use viewport height for better responsiveness */
-    overflow-x: hidden;
+    height: 70vh;
+    overflow: hidden;
     margin: 2rem 0;
-    touch-action: none; /* Disable browser handling of all panning and zooming gestures */
+    touch-action: none;
 }
 
 #image-track {
@@ -183,87 +183,70 @@ h3 {
     top: 50%;
     transform: translate(0%, -50%);
     user-select: none;
-    width: max-content; /* Allow the track to be as wide as needed */
-    touch-action: pan-x; /* Allow horizontal panning */
-    cursor: grab; /* Indicate the element is draggable */
+    width: max-content;
+    touch-action: pan-x;
+    cursor: grab;
 }
 
 #image-track:active {
-    cursor: grabbing; /* Change cursor when dragging */
+    cursor: grabbing;
 }
 
-#image-track > .image {
-    width: 80vw; /* Wider images on mobile */
-    height: 60vh; /* Taller images using viewport height */
+.image-container {
+    position: relative;
+    width: 80vw;
+    height: 60vh;
+}
+
+.image-container .image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: 100% center;
-    pointer-events: none; /* Prevent images from interfering with touch events */
-    position: relative; /* Add this to make it a positioning context for the text */
+    pointer-events: none;
 }
 
-
 .image-text {
+    position: absolute;
     color: white;
     padding: 10px;
     font-size: 0.8rem;
-    text-align: left;
-    border-radius: 5px;
-    pointer-events: none; /* Prevent text from interfering with touch events */
-    z-index: 10; /* Ensure text is above the image */
-    transform: translateY(-100%); /* Move text up to overlay the image above it */
-
-}
-.journaling {
-    position: absolute;
-    top: 90%;
-    left: 4%;
-    width:200px;
-    
+    font-weight: 200;
+    line-height: 22px;
+    text-align: center;
+    pointer-events: none;
+    z-index: 10;
+    width: 80%;
+    top: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
 
-
-
-.communicating {
-    position: absolute;
-    top: 90%;
-    left: 29%;
-    width:200px;
     
-    
-}
-
-.practical {
-    position: absolute;
-    top: 90%;
-    left: 55%;
-    width:200px;
-    
-    
-}
-
-.regulation {
-    position: absolute;
-    top: 90%;
-    left: 80%;
-    width:200px;
-    
-    
-}
-
 
 
 
 
 /* Media query for larger screens */
 @media (min-width: 768px) {
-    #image-track > .image {
-        width: 40vmin;
+    .image-container {
+        width: 60vmin;
         height: 56vmin;
+    }
+
+    .image-text {
+        font-size: 0.9rem;
+        width: 80%;
     }
 }
 
-
+/* For even larger screens */
+@media (min-width: 1200px) {
+    .image-text {
+        font-size: 1rem;
+        width: 70%;
+    }
+}
 /* CAROUSEL */
 
 
@@ -286,30 +269,21 @@ h3 {
 
 
 .mindfulness h4 {
-
     font-size: 1.5rem;
     font-weight: 200;
     text-align: center;
-
-
 }
 
 .mindfulness h5 {
-
     font-size: 1.3rem;
     font-weight: 200;
     text-align: center;
-
-
 }
 
 .mindfulness p {
-
     font-size: 1rem;
     font-weight: 100;
     text-align: center;
-
-
 }
 
 /* TABS */
