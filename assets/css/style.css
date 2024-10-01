@@ -140,7 +140,7 @@ h3 {
 
 .card-text {
     text-align: center;
-    margin: 0 10 10 10px;
+    margin: 0 10px 10px 10px;
     font-size: 0.9rem;
 
 }
@@ -234,6 +234,15 @@ h3 {
 
 .column1 {
     width:50%
+}
+
+
+
+/* FORM */
+
+.form-format {
+    height: 700px;
+    width: 100%;
 }
 
 

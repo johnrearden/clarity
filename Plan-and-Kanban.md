@@ -49,8 +49,8 @@ Tasks:
 
 [To Do]
 
-Scope:
 
+Scope:
 
 Structure:
 
@@ -60,12 +60,13 @@ Surface:
 
 Product development - User Stories Functionality:
 
-4. Design and Implement Contact Form
+
 
 
 
 
 [In Progress]
+
 
 Strategy:
 
@@ -75,13 +76,7 @@ Strucure:
 
 Skelton:
 
-
-
-
 Product development - User Stories functionality:
-
-
-8. Add External Resources Section
 
 
 
@@ -92,22 +87,6 @@ Product development - User Stories functionality:
 
 
 
-
-
-
-
-
-
-
-
-Product development - User Stories functionality:
-
-1. Implement Emotion Information Section
-3. Create Mindfulness Resources Section
-7. Implement Responsive Design
-6. Apply Supportive Design Principles
-2. Develop Coping Strategies Section
-5. Ensure Intuitive Navigation
 
 [Done]
 
@@ -133,9 +112,17 @@ Skeleton: - Design wireframes incorporating all key sections
 Surface - Choose calming color scheme and typography
 SUrface - Design visual elements (cards, buttons, form) that convey a supportive atmosphere 
 
-Product development - User story functionality:
 
+Product development - User Stories functionality:
 
+1. Implement Emotion Information Section
+3. Create Mindfulness Resources Section
+7. Implement Responsive Design
+6. Apply Supportive Design Principles
+2. Develop Coping Strategies Section
+8. Add External Resources Section
+5. Ensure Intuitive Navigation
+4. Design and Implement Contact Form
 
 
 
