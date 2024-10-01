@@ -162,7 +162,9 @@ h3 {
 
 /* COPING STATEGIES */
 
-
+.cope {
+    padding-bottom: 0 !important;
+}
 
 /* IMAGE TRACK   --- I replaced the carousel with this paralax image track i found a video about online. https://codepen.io/Hyperplexed/full/MWXBRBp */
 

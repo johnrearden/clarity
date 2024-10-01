@@ -1,7 +1,7 @@
 A list of bugs and Fixes.
 
 
-BACKGROUND IMAGE TOO SHORT-----------------(Partial fix positoned image differntly not happy with result though)
+BACKGROUND IMAGE TOO SHORT-----------------(Partial fix positoned image differntly not happy with result though) FIXED
 
 
 
@@ -16,7 +16,7 @@ Make space above the cards for when they grow - FIXED
 
 Journaling image in carousel is taller than the rest. - FIXED
 
-Deployed images arent showing and file sizes too large.
+Deployed images arent showing and file sizes too large - DISPLAY FIXED FILES STILL TOO LARGE
 
 RSVP show as title of form
 
