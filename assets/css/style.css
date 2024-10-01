@@ -221,30 +221,14 @@ h3 {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 /* AI fix for aligning vertically with position absolute */
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /*shift the text block up by half its own height to centre it*/
 }
 
 
-/* Media query for larger screens */
-@media (min-width: 768px) {
-    .image-container {
-        width: 40vmin;
-        height: 56vmin;
-    }
 
-    .image-text {
-        font-size: 0.8rem;
-        width: 80%;
-    }
-}
 
 /* For even larger screens */
-@media (min-width: 1200px) {
-    .image-text {
-        font-size: 1rem;
-        width: 70%;
-    }
-}
+
 /* CAROUSEL */
 
 
@@ -291,6 +275,12 @@ h3 {
 }
 
 
+
+/* FOOTER */
+.footer {
+    box-shadow: 3px 3px 6px 0 rgba(59, 59, 59, 0.2);
+}
+
 /* RESOURCES */
 
 
@@ -328,6 +318,16 @@ h3 {
 
 @media screen and (min-width: 768px) {
 
+    .image-container {
+        width: 40vmin;
+        height: 56vmin;
+    }
+
+    .image-text {
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
 
     /* CHANGE CARUSEL IMAGE WHEN ON TABLET AND ABOVE */
     .car-image-1 {
@@ -346,4 +346,13 @@ h3 {
         content: url("../images/coping-strategies/4.png")
     }
 
+}
+
+
+
+@media (min-width: 1200px) {
+    .image-text {
+        font-size: 1rem;
+        width: 70%;
+    }
 }

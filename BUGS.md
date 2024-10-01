@@ -19,3 +19,5 @@ Journaling image in carousel is taller than the rest. - FIXED
 Deployed images arent showing and file sizes too large.
 
 RSVP show as title of form
+
+Have to hard reload for swipe to work on mobile emulator in dev tools?
