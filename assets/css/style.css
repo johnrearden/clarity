@@ -172,7 +172,7 @@ h3 {
     height: 70vh;
     overflow: hidden;
     margin: 2rem 0;
-    touch-action: none;
+    
 }
 
 #image-track {
