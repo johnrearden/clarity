@@ -222,11 +222,16 @@ h3 {
 
 .fa-brands {
     font-size: 1.2rem;
+  
 
 }
 
 .footer-text {
     font-size: 1rem;
+}
+
+.column1 {
+    width:50%
 }
 
 
