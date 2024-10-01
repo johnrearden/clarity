@@ -164,12 +164,13 @@ h3 {
 
 
 
-/* IMAGE TRACK   --- I replaced the carousel with this image paralax image track i found a video about online. https://codepen.io/Hyperplexed/full/MWXBRBp */
+/* IMAGE TRACK   --- I replaced the carousel with this paralax image track i found a video about online. https://codepen.io/Hyperplexed/full/MWXBRBp */
 
 .image-track-container {
     position: relative;
     width: 100%;
     height: 70vh;
+    touch-action: none;
     overflow: hidden;
     margin: 2rem 0;
     
