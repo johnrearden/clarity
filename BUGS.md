@@ -17,3 +17,5 @@ Make space above the cards for when they grow - FIXED
 Journaling image in carousel is taller than the rest. - FIXED
 
 Deployed images arent showing and file sizes too large.
+
+RSVP show as title of form
