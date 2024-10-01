@@ -164,7 +164,7 @@ h3 {
 
 
 
-/* IMAGE TRACK */
+/* IMAGE TRACK   --- I replaced the carousel with this image paralax image track i found a video about online. https://codepen.io/Hyperplexed/full/MWXBRBp */
 
 .image-track-container {
     position: relative;
@@ -208,34 +208,31 @@ h3 {
 
 .image-text {
     position: absolute;
-    color: white;
-    padding: 10px;
-    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    padding: 10px, 10px, 10px, 0px;
+    font-size: 0.8rem !important;
     font-weight: 200;
-    line-height: 22px;
-    text-align: center;
+    line-height: 15px;
+    text-align: left;
     pointer-events: none;
     z-index: 10;
-    width: 80%;
-    top: 1rem;
+    width: 70%;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+/* AI fix for aligning vertically with position absolute */
+    top: 50%;
+    transform: translateY(-50%);
 }
-
-
-    
-
-
 
 
 /* Media query for larger screens */
 @media (min-width: 768px) {
     .image-container {
-        width: 60vmin;
+        width: 40vmin;
         height: 56vmin;
     }
 
     .image-text {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         width: 80%;
     }
 }
