@@ -62,59 +62,61 @@ The UX design process was guided by a flow chart, which can be found here: [UX f
 - Sticky navigation that collapses into a hamburger menu on smaller screens
 - Smooth scrolling implemented for better user experience
 
-![Nav Bar Mobile](./README-images/components/nav-mobile.png)
-![Nav Bar](./README-images/components/nav-lrg.png)
+[Nav Bar Mobile](./README-images/components/nav-mobile.png) <br>
+[Nav Bar](./README-images/components/nav-lrg.png) 
 
 
 #### Landing Page (Home Section)
 - Hero image with welcoming text overlay
 - Brief introduction to Clarity's purpose
 
-[Landing Page Mobile](./README-images/components/hero-mobile.png)
-![Landing Page](./README-images/components/hero-lrg.png)
+[Landing Page Mobile](./README-images/components/hero-mobile.png)<br>
+[Landing Page](./README-images/components/hero-lrg.png)
 
 #### Emotions Section
 - Information about six common emotional states: Stressed, Anxious, Depressed, Angry, Lonely, and Bereft
 - Each emotion presented in a card with an image and descriptive text
 - Hover effect on cards for visual feedback
 
-![Emotions Section Mobile](./README-images/components/emotions-mobile.png)
-![Emotions Section](./README-images/components/emotions-large.png)
+[Emotions Section Mobile](./README-images/components/emotions-mobile.png)<br>
+[Emotions Section](./README-images/components/emotions-large.png)
 
 #### Coping Strategies Section
 - Interactive carousel featuring various coping strategies
 - Swipe or drag navigation for both desktop and mobile devices (Swipe working in Devtools emulators but not on devices)
 - Each strategy presented on a background image with accompanying text
 
-![Coping Strategies Section Mobile](./README-images/components/cope-mobile.png)
-![Coping Strategies Section](./README-images/components/cope-large.png)
+[Coping Strategies Section Mobile](./README-images/components/cope-mobile.png)<br>
+[Coping Strategies Section](./README-images/components/cope-large.png)
 
 
 #### Mindfulness Centre
 - Tabbed interface organizing information into "What is Mindfulness?", "Techniques", "Daily Practice", and "Resources"
 - Each tab provides relevant information and guidance on mindfulness practices
 
-![Mindfulness Centre Mobile](./README-images/components/mindfulness-mobile.png)
-![Mindfulness Centre](./README-images/components/mindfulness-lrg.png)
+[Mindfulness Centre Mobile](./README-images/components/mindfulness-mobile.png)<br>
+[Mindfulness Centre](./README-images/components/mindfulness-lrg.png)
 
 #### Get More Help Section
 - Accordion-style list of external mental health resources
 - Links to organizations such as Samaritans, Mind, NHS Mental Health Services, and others
 
-![Get More Help Section](https://your-get-more-help-image-url-here.com)
+[Get More Help Section Mobile](./README-images/components/get-help-mobile.png)<br>
+[Get More Help Section](./README-images/components/get-help-large.png)
 
 #### Contact Form
 - "Reach Out" button in navigation opens a modal contact form
 - Implemented using Google Forms for simplicity and reliability
 
-![Contact Form Mobile](/README-images/components/footer-mobile.png)
-![Contact Form](/README-images/components/form-lrg.png)
+[Contact Form Mobile](/README-images/components/form-mobile.png)<br>
+[Contact Form](/README-images/components/form-lrg.png)
 
 #### Footer
 - Social media links
 - Quick links to Privacy Policy, Terms of Use, and Copyright information
 
-![Footer](https://your-footer-image-url-here.com)
+[Footer Mobile](./README-images/components/footer-mobile.png)<br>
+[Footer](./README-images/components/footer-lrg.png)
 
 ### Features Left to Implement
 
@@ -136,8 +138,8 @@ Chatbot Support: An AI-driven chatbot to provide immediate, basic support and gu
 ## Testing
 
 ### Validator Testing
-- HTML: No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
-- CSS: No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+- HTML: No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)  - [Validated code]()
+- CSS: No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/) [validated code]
 
 ### Manual Testing
 - The website was tested on various browsers (Chrome, Edge, DuckDuckGo, Safari) and devices (Desktop, Tablet, Mobile) to ensure responsiveness and functionality
