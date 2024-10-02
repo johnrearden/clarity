@@ -171,7 +171,7 @@ The site was deployed to GitHub pages using the following steps:
 2. From the source section drop-down menu, select the Main Branch
 3. Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
 
-The live link can be found here - [Clarity Live Site](https://GuyMitchy.github.io)
+The live link can be found here - [Clarity Live Site](https://GuyMitchy.github.io/clarity)
 
 ## Credits
 
