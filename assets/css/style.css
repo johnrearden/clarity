@@ -12,13 +12,14 @@ body {
     margin-right: 0;
 }
 
-/* THIS IS AN AI FIX -  IT REMOVES THE NEGATIVE MARGINS FROM THE NESTED COLUMNS - CHECK FOR OVERWRITES */
+/* THIS IS A CLAUDE AI FIX FOR HORIZONTAL JIGGLE -  IT REMOVES THE NEGATIVE MARGINS FROM THE NESTED COLUMNS - CHECK FOR OVERWRITES */
 .container-fluid>.row {
     margin-left: 0;
     margin-right: 0;
 }
 
-.container-fluid>.row>[class*="col-"] {
+.container-fluid>.row>[class*="col-"] {  /* [class*="col-"]: This is an attribute selector. It selects elements whose class attribute contains the string "col-".
+                                             The asterisk (*) means "contains" in this context.*/
     padding-left: 0;
     padding-right: 0;
 }
@@ -30,7 +31,6 @@ h2 {
 }
 
 h3 {
-
     font-size: 1.2rem;
     font-weight: 100;
     text-align: center;
@@ -47,22 +47,17 @@ h3 {
     height: 65px
 }
 
-
-
 .navbox {
     position: fixed;
     z-index: 1000;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
-
 
 .navbar {
     padding-right: 20px;
     padding-top: 0;
     padding-bottom: 0;
-
 }
 
 .navbar-brand {
@@ -85,7 +80,6 @@ h3 {
     padding: 15px
 }
 
-
 /* JUMBOTRON */
 
 .bpsky {
@@ -103,18 +97,12 @@ h3 {
         /*MAKE JUMBOTRON SIT JUST ON EDGE OF NAVBAR*/
 }
 
-
 /* EMOTION SECTION */
-
-
 
 .card {
     border: none;
 
 }
-
-
-
 .emotions {
     padding-left: 15px;
     padding-right: 15px;
@@ -124,25 +112,18 @@ h3 {
     margin-right: auto
 }
 
-
-
 /* EMOTION CARDS */
-
-
 
 .card {
     margin-bottom: 50px;
     box-shadow: 0 5px 9px 0 rgba(59, 59, 59, 0.2);
     background-color: #95cfd945;
-
-
 }
 
 .card-text {
     text-align: center;
     margin: 0 10px 10px 10px;
     font-size: 0.9rem;
-
 }
 
 /* CARD IMAGE WRAPPERS */
@@ -150,7 +131,6 @@ h3 {
 .imgwrapper {
     height: 346.05px;
     overflow: hidden;
-
 
 }
 
@@ -212,7 +192,7 @@ h3 {
 .image-text {
     position: absolute;
     color: rgb(255, 255, 255);
-    padding: 10px, 10px, 10px, 0;
+    padding-right: 20px;
     font-size: 0.8rem !important;
     font-weight: 200;
     line-height: 15px;
@@ -230,12 +210,6 @@ h3 {
 .grabtab {
     font-size: 2rem;
 }
-
-/* For even larger screens */
-
-/* CAROUSEL */
-
-
 
 
 /* MINDFULLNESS CENTER */
@@ -330,30 +304,12 @@ h3 {
     }
 
 
-    /* CHANGE CARUSEL IMAGE WHEN ON TABLET AND ABOVE */
-    .car-image-1 {
-        content: url("../images/coping-strategies/1.png")
-    }
-
-    .car-image-2 {
-        content: url("../images/coping-strategies/3.png")
-    }
-
-    .car-image-3 {
-        content: url("../images/coping-strategies/2.png")
-    }
-
-    .car-image-4 {
-        content: url("../images/coping-strategies/4.png")
-    }
-
-}
-
-
 
 @media (min-width: 1200px) {
     .image-text {
         font-size: 1rem;
         width: 70%;
     }
+}
+
 }
