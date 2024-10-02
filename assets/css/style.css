@@ -212,7 +212,7 @@ h3 {
 .image-text {
     position: absolute;
     color: rgb(255, 255, 255);
-    padding: 10px, 10px, 10px, 0px;
+    padding: 10px, 10px, 10px, 0;
     font-size: 0.8rem !important;
     font-weight: 200;
     line-height: 15px;
