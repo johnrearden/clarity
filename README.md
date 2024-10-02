@@ -138,8 +138,8 @@ Chatbot Support: An AI-driven chatbot to provide immediate, basic support and gu
 ## Testing
 
 ### Validator Testing
-- HTML: No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)  - [Validated code]()
-- CSS: No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/) [validated code]
+- HTML: No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)  - [Validated code](./README-images/validated/html-validated.png)
+- CSS: No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/) [validated code](./README-images/validated/css-validated.png)
 
 ### Manual Testing
 - The website was tested on various browsers (Chrome, Edge, DuckDuckGo, Safari) and devices (Desktop, Tablet, Mobile) to ensure responsiveness and functionality
@@ -158,7 +158,8 @@ Chatbot Support: An AI-driven chatbot to provide immediate, basic support and gu
 
 #### Unfixed Bugs
 1. Form title: The "RSVP" title on the contact form modal needs to be changed to a more appropriate title
-2. Mobile swipe inconsistency: Swipe functionality on the coping strategies carousel works inconsistently across different mobile devices and sometimes requires a hard reload in mobile emulators
+2. Mobile swipe inconsistency: Swipe functionality on the coping strategies carousel works inconsistently across different mobile devices and sometimes requires a refresh in mobile emulators and desktop
+I think it may have something to do with this invalid keyframe error in the console, but ive only seen it once as the issue is temporomental [Console Log Error](./README-images/console-logs/Screenshot%202024-10-02%20105743.png)
 
 ## Deployment
 
@@ -168,24 +169,27 @@ The site was deployed to GitHub pages using the following steps:
 2. From the source section drop-down menu, select the Main Branch
 3. Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
 
-The live link can be found here - [Clarity Live Site](https://your-live-site-url-here.com)
+The live link can be found here - [Clarity Live Site](https://GuyMitchy.github.io)
 
 ## Credits
 
 ### Content
-- The text content for the Emotions and Coping Strategies sections was written by the developer and Claude AI with inspiration from various mental health resources
+- The text content for the Emotions and Coping Strategies sections was written by Claude AI with inspiration from various mental health resources
 - The Mindfulness Centre content was adapted from mindfulness.org and headspace.com
 - External resource information was sourced from the respective organizations' websites
 
 ### Media
-- The hero image and background images for the coping strategies carousel were obtained from Pexels.com
-- The emotion card images were sourced from a combination of Pexels.com and public domain art repositories
+- The hero image and background images for the coping strategies carousel were obtained from Pexels.com [https://www.pexels.com/photo/people-on-sea-under-blue-and-pink-sky-4784393/] [https://www.pexels.com/photo/photo-of-body-of-water-2649403/] [https://www.pexels.com/photo/serene-baabe-sunset-over-tranquil-waters-28542257/] [https://www.goodfon.com/nature/wallpaper-priroda-nebo-oblaka-mesyac.html]
+- The emotion card images were sourced from a combination of Pexels.com and public domain art repositories [https://www.deviantart.com/lilrolohere/art/Anger-201216640] [https://commons.wikimedia.org/wiki/File:Anxiety_%281896%29_by_Edvard_Munch._Original_from_The_Art_Institute_of_Chicago._Digitally_enhanced_by_rawpixel._%2850434737057%29.jpg] [https://www.pexels.com/photo/grayscale-photo-of-man-thinking-in-front-of-analog-wall-clock-1194196/] [https://www.pexels.com/photo/woman-in-white-clothes-on-a-corner-2967156/] [https://www.pexels.com/photo/man-in-black-jacket-standing-on-the-seashore-5990737/] [https://www.pexels.com/photo/broken-heart-cardboard-on-brown-wooden-table-top-6670068/]
+
+
 - Icons used in the website are from Font Awesome
+- I created the logo using canva
 
 ### Code
-- The smooth scrolling navigation was implemented with guidance from Vlaude Ai and CSS-Tricks - Then modified to fit the project needs
-- The carousel for coping strategies was adapted from a CodePen by Hyperplexed and modified for touch functionality.
-- Bootstrap 4.6 documentation was used for the overall responsive layout and components such as the navbar and accordion
+- The smooth scrolling navigation was implemented with guidance from Claude Ai and CSS-Tricks - Then modified to fit the project needs
+- The carousel for coping strategies was adapted from a CodePen by Hyperplexed and modified for touch functionality. [Codepen](https://codepen.io/Hyperplexed/full/MWXBRBp)
+- Bootstrap 4.6 documentation was used for the overall responsive layout and components such as the navbar and accordion.
 
 
 
@@ -203,7 +207,7 @@ The development of Clarity followed a unique and innovative approach, leveraging
 
 5. **Iterative Development**: The development process involved moving through each stage, discussing content, functionality, and implementation with Claude AI. The AI was prompted to act as a tutor, providing guidance without directly creating code unless specifically asked to explain certain structures and components.
 
-6. **Documentation**: The full plan and Kanban board can be found here: [Plan and Kanban](./Plan-and-Kanban.md)
+6. **Documentation**: The full plan and Kanban board can be found here: [Plan and Kanban](./planning-resources/Plan-and-Kanban.md)
 
 This approach allowed for a thorough exploration of ideas, consistent alignment between planning and execution, and a well-documented development process.
 
@@ -223,5 +227,5 @@ Throughout the development of Clarity, AI assistance was utilized in various asp
 
 6. **Code Optimization**: AI provided suggestions for optimizing code structure and improving performance, particularly in JavaScript functions.
 
-It's important to note that while AI was a valuable tool in the development process, all final decisions and implementations were made by the developer. The AI served as a guide and collaborator, enhancing the development process rather than replacing human creativity and decision-making.
+It's important to note that while AI was a valuable tool in the development process, all final decisions and implementations were made by myself. The AI served as a guide and collaborator, enhancing the development process rather than replacing human creativity and decision-making. Here is a messsage from Claude regarding our planning process. [Meassage from ClaudeAi](./planning-resources/message-from-claude.md)
 
