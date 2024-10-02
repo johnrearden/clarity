@@ -28,7 +28,7 @@ LO3 Learners will be able to deploy the one-page web application to a cloud plat
 LO4  Learners will be able to maximise future maintainability through documentation, code 
 structure, and organisation.
 
-Acceptance Criteria:
+Example Acceptance Criteria:
 - Hero section uses Bootstrap Jumbotron
 - Contains an encouraging message about mental health
 - Uses a calming color scheme
@@ -84,6 +84,18 @@ Product development - User Stories functionality:
 
 
 [Review]
+
+Strategy:
+
+Scope:
+
+Strucure:
+
+Skelton:
+
+Product development - User Stories functionality:
+
+
 
 
 
@@ -142,7 +154,7 @@ Clarity is a place for people to go who are feeling overhwlemed mentally.
 Strategy: User Needs -------------------------------------------------------------------------------------------------------------------------- 
 
  Information on negative emotions, what they are and why we may be feeling them.
- Information on how to get control of your mind - Speak to people about how you are feeling. Write down your thoughts and do a dialy log of how you feel etc. Mindfulness.
+ Information on how to get control of your mind - Speak to people about how you are feeling. learn how to write down your thoughts and do a dialy log of how you feel etc. Mindfulness.
  It should contain a contact form where people can explain how theyre feeling and get advice and links to external resources.
 
 
@@ -240,14 +252,14 @@ Content Requirements: ----------------------------------------------------------
 Emotion Information Hub:
 
     Descriptions of at least 5 common negative emotions (e.g., anxiety, depression, anger, grief, stress)
-    150-200 word explanation for each emotion
+    150-200 word explanation for each emotion ( 50ish words felt right in the end)
     List of common triggers and symptoms for each emotion
     Short, relatable examples or scenarios for each emotion
 
 
 Coping Strategies Toolkit:
 
-    5-7 practical coping methods (e.g., deep breathing, progressive muscle relaxation, cognitive restructuring)
+    5-7 (only managed 4, can expand) practical coping methods (e.g., deep breathing, progressive muscle relaxation, cognitive restructuring)
     Step-by-step instructions for each coping strategy
     Tips for effective communication (active listening, "I" statements, etc.)
     Guidelines for starting and maintaining a thought journal
@@ -258,15 +270,17 @@ Mindfulness Center:
 
         Brief introduction to mindfulness (what it is, benefits)
         3-5 basic mindfulness techniques with instructions
-        1-2 short guided meditation scripts or audio clips
+        1-2  short guided meditation scripts or audio clips - (Not included currently)
+
+        
 
 
 Interactive Contact Form:
 
         Fields: Name, Email, Current Emotion, Description of Situation
-        Dropdown menu for selecting primary emotion
+        Dropdown menu for selecting primary emotion (not included can be added)
         Text area for detailed description
-        Disclaimer about response times and privacy policy
+        Disclaimer about response times and privacy policy (not included can be added)
 
 
 Intuitive Navigation System:
@@ -278,9 +292,9 @@ Intuitive Navigation System:
 
 Calming Visual Design:
 
-        Color palette definition (3-4 main colors)
+        Color palette definition (3-4 main colors) - (Kept it simple with just 2)
         Selection of 2-3 calming background images or patterns
-        Typography choices for headers and body text
+        Typography choices for headers and body text (Liked the bootstrap default font for the headings nav and paragraphs. Struggling to find out the fonts use as devtools just shows whole family of Bootstrap fonts on elements)
 
 
 Responsive Layout:
@@ -293,7 +307,7 @@ External Resources Directory:
 
         List of 5-7 reputable mental health organizations
         Brief (30-50 word) description for each resource
-        Categorization system (e.g., crisis support, therapy resources, educational materials)
+        Categorization system (e.g., crisis support, therapy resources, educational materials) (Didnt categorize in the end made accordion look messy)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 Nice-to-have features for future development ------------------------------------------------------------------------------------------------
@@ -309,6 +323,8 @@ Expert Q&A Section: Periodic posts where mental health professionals answer comm
 Privacy-Focused User Accounts: Allow users to save their progress and preferences securely.
 
 Chatbot Support: An AI-driven chatbot to provide immediate, basic support and guide users to appropriate resources.
+
+(Put emotion cards in a carousel for mobile to save on scrolling)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -402,6 +418,7 @@ Clarity - Mental Health Support
    3.3 Stress
    3.4 Anger
    3.5 Grief
+   (Added Loneliness as 6 cards looked better)
 
 4. Coping Strategies Toolkit
    4.1 Thought Journaling
@@ -412,7 +429,7 @@ Clarity - Mental Health Support
 5. Mindfulness Center
    5.1 Introduction to Mindfulness
    5.2 Basic Mindfulness Techniques
-   5.3 Guided Meditation Resources
+   5.3 Guided Meditation Resources (yet to implement)
 
 6. External Resources
    6.1 Crisis Support
@@ -438,7 +455,7 @@ Clarity - Mental Health Support
    - Submit Button
 
 8. Footer
-   - Quick links to main sections
+   - Quick links to main sections (not required as nav is fixed)
    - Copyright information
    - Privacy policy link
 
@@ -450,11 +467,11 @@ ARCHITECTURE -------------------------------------------------------------------
 
 [Card Deck: Emotion Information]
 
-[Accordion: Coping Strategies] - After more detailed wireframing this became a carousel
+[Accordion: Coping Strategies] - After more detailed wireframing this became a carousel -- then it became the image track
 
 [Tabs: Mindfulness Center]
 
-[Responsive Table: External Resources]  - Could use table or accordion for this now
+[Responsive Table: External Resources]  - Could use table or accordion for this now (Used accordion)
 
 [Button to trigger Modal Contact Form]
 

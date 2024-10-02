@@ -1,176 +1,225 @@
-# Clarity
+# Clarity - Mental Health Support Website
 
-Clarity is a first stop website for people struggling with their emotions and mental health. It allows the user to understand, navigate and validate their emotions. It offers coping strategies, information on mindfullness and resources for when people need extra help.
+Clarity is a responsive, single-page website designed to provide support and resources for people feeling overwhelmed mentally. It offers information on negative emotions, coping strategies, mindfulness techniques, a contact form and external resources to help users understand and manage their emotional state.
 
+![Responsive Mockup](./README-images/mockup/Screenshot%202024-10-01%20235935.png)
 
+## Table of Contents
+1. [UX/UI](#uxui)
+2. [Features](#features)
+3. [Testing](#testing)
+4. [Deployment](#deployment)
+5. [Credits](#credits)
+6. [Planning and Development Process](#planning-and-development-process)
+7. [AI Assistance](#ai-assistance)
 
+## UX/UI
 
+The UX/UI design for Clarity follows a structured approach based on the five planes of user experience:
 
-![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+### Strategy
+- Created user stories to define project objectives and user needs
+- Primary goal: Provide a supportive resource for individuals dealing with mental health challenges
 
-## Features 
+### Scope
+- Outlined core features based on user stories:
+  
+  MVP-
+  - Easy navigation
+  - supportive design:
+  - Mobile accessibility
+  - Emotion information section
+  - Coping strategies section
+  Extra-content
+  - Mindfulness resources
+  - External help resources
+  - Contact form
 
-### Emotion Information Hub:
+- Outlined some nice to have features for future development
 
-    A dedicated section with clear, concise explanations of common negative emotions
-    Descriptions of why people might experience these emotions
-    Possible triggers and common symptoms associated with each emotion
+### Structure
+- Chose a single-page layout for ease of navigation
+- Planned to implement smooth scrolling between sections
+- Planned information architecture to present emotional information effectively
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+### Skeleton
+- Designed wireframes incorporating all key sections
+- Ensured logical flow of information
 
-### Coping Strategies Toolkit:
+### Surface
+- Selected a calming color scheme focusing on soft blues and pinks
+- Chose typography and visual elements to enhance readability and user engagement
+- Designed visual elements (cards, buttons, form) to convey a supportive atmosphere
 
-    A collection of practical methods to manage emotional states
-    Tips for effectively communicating feelings to others
-    Guidelines for journaling and thought tracking
-    Simple exercises for emotional regulation
+The UX design process was guided by a flow chart, which can be found here: [UX flow chart](https://guymitchy.github.io/UX-Flow/)
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+## Features
 
-### Mindfulness Center:
+### Existing Features
 
-    Introduction to mindfulness and its benefits
-    Basic mindfulness techniques and exercises
-    Links to guided meditation resources or embedded audio clips
+#### Navigation Bar
+- Full responsive navigation bar with links to all sections
+- Sticky navigation that collapses into a hamburger menu on smaller screens
+- Smooth scrolling implemented for better user experience
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
-
-### Interactive Contact Form:
-
-    User-friendly form for submitting personal experiences and feelings
-    Fields for describing current emotional state and specific concerns
-    Clear submission process with confirmation message
-
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
-
-### Intuitive Navigation System:
-
-    Sticky header with navigation menu
-    Smooth scrolling to different sections
-    "Home" button for easy navigation on mobile devices
-
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
-
-### Calming Visual Design:
-
-    Soothing color palette (e.g., soft blues, greens, or lavenders)
-    Clean, uncluttered layout
-    Use of calming imagery or subtle background patterns
-    Easy-to-read typography with appropriate contrast
-
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
-
-### Responsive Layout:
-
-    Fluid grid system that adapts to different screen sizes
-    Optimized images and content for mobile devices
-    Touch-friendly interface elements for mobile users
-
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
-
-### External Resources Directory:
-
-    Curated list of reputable mental health organizations and hotlines
-    Brief descriptions of each resource and what they offer
-    Direct links to external websites or contact information
-
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
-
-### Footer (Explain in more detail)
-
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+![Nav Bar Mobile](./README-images/components/nav-mobile.png)
+![Nav Bar](./README-images/components/nav-lrg.png)
 
 
+#### Landing Page (Home Section)
+- Hero image with welcoming text overlay
+- Brief introduction to Clarity's purpose
+
+[Landing Page Mobile](./README-images/components/hero-mobile.png)
+![Landing Page](./README-images/components/hero-lrg.png)
+
+#### Emotions Section
+- Information about six common emotional states: Stressed, Anxious, Depressed, Angry, Lonely, and Bereft
+- Each emotion presented in a card with an image and descriptive text
+- Hover effect on cards for visual feedback
+
+![Emotions Section Mobile](./README-images/components/emotions-mobile.png)
+![Emotions Section](./README-images/components/emotions-large.png)
+
+#### Coping Strategies Section
+- Interactive carousel featuring various coping strategies
+- Swipe or drag navigation for both desktop and mobile devices (Swipe working in Devtools emulators but not on devices)
+- Each strategy presented on a background image with accompanying text
+
+![Coping Strategies Section Mobile](./README-images/components/cope-mobile.png)
+![Coping Strategies Section](./README-images/components/cope-large.png)
+
+
+#### Mindfulness Centre
+- Tabbed interface organizing information into "What is Mindfulness?", "Techniques", "Daily Practice", and "Resources"
+- Each tab provides relevant information and guidance on mindfulness practices
+
+![Mindfulness Centre Mobile](./README-images/components/mindfulness-mobile.png)
+![Mindfulness Centre](./README-images/components/mindfulness-lrg.png)
+
+#### Get More Help Section
+- Accordion-style list of external mental health resources
+- Links to organizations such as Samaritans, Mind, NHS Mental Health Services, and others
+
+![Get More Help Section](https://your-get-more-help-image-url-here.com)
+
+#### Contact Form
+- "Reach Out" button in navigation opens a modal contact form
+- Implemented using Google Forms for simplicity and reliability
+
+![Contact Form Mobile](/README-images/components/footer-mobile.png)
+![Contact Form](/README-images/components/form-lrg.png)
+
+#### Footer
+- Social media links
+- Quick links to Privacy Policy, Terms of Use, and Copyright information
+
+![Footer](https://your-footer-image-url-here.com)
 
 ### Features Left to Implement
 
-- Another feature idea
+Community Forum: A moderated space for users to share experiences and support each other.
+
+Personalized Resource Recommendations: Based on user input, suggest relevant articles or coping strategies.
+
+Interactive Breathing Exercise: A visual guide to help users practice deep breathing techniques.
+
+Expert Q&A Section: Periodic posts where mental health professionals answer common questions.
+
+Privacy-Focused User Accounts: Allow users to save their progress and preferences securely.
+
+Chatbot Support: An AI-driven chatbot to provide immediate, basic support and guide users to appropriate resources.
 
 
 
 
+## Testing
 
-## Testing 
+### Validator Testing
+- HTML: No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
+- CSS: No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### Manual Testing
+- The website was tested on various browsers (Chrome, Edge, DuckDuckGo, Safari) and devices (Desktop, Tablet, Mobile) to ensure responsiveness and functionality
+- All links were checked to ensure they are working correctly and open in new tabs where appropriate
+- The contact form was tested to ensure it submits correctly and provides appropriate feedback to the user (Feedback needs improving - Autofill not functional, there was a warning/error message in devtools about this)
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+### Bugs and Fixes
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+#### Fixed Bugs
+1. Hero background image height issue: Adjusted image positioning to resolve layout problems when the hamburger menu was opened
+2. Full-width layout: Removed padding from containers for nav and hero sections
+3. Card centering: Centered cards in the Emotions section within their container
+4. Card growth space: Added space above cards to accommodate hover effect growth
+5. Carousel image consistency: Adjusted the journaling image in the carousel to match the height of other images
+6. Deployed image display: Fixed issues with images not showing in the deployed version
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-
-### Validator Testing 
-
-- HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
-
-### Unfixed Bugs
-
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+#### Unfixed Bugs
+1. Form title: The "RSVP" title on the contact form modal needs to be changed to a more appropriate title
+2. Mobile swipe inconsistency: Swipe functionality on the coping strategies carousel works inconsistently across different mobile devices and sometimes requires a hard reload in mobile emulators
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+The site was deployed to GitHub pages using the following steps:
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+1. In the GitHub repository, navigate to the Settings tab
+2. From the source section drop-down menu, select the Main Branch
+3. Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - [Clarity Live Site](https://your-live-site-url-here.com)
 
+## Credits
 
-## Credits 
-
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+### Content
+- The text content for the Emotions and Coping Strategies sections was written by the developer and Claude AI with inspiration from various mental health resources
+- The Mindfulness Centre content was adapted from mindfulness.org and headspace.com
+- External resource information was sourced from the respective organizations' websites
 
 ### Media
+- The hero image and background images for the coping strategies carousel were obtained from Pexels.com
+- The emotion card images were sourced from a combination of Pexels.com and public domain art repositories
+- Icons used in the website are from Font Awesome
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
-
-
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
-
-## Other General Project Advice
-
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
+### Code
+- The smooth scrolling navigation was implemented with guidance from Vlaude Ai and CSS-Tricks - Then modified to fit the project needs
+- The carousel for coping strategies was adapted from a CodePen by Hyperplexed and modified for touch functionality.
+- Bootstrap 4.6 documentation was used for the overall responsive layout and components such as the navbar and accordion
 
 
 
-## Planning
+## Planning and Development Process
 
-I decide to proceed in planning this project in conversation with Anthropic's Claude Ai. I chose to do this as i find that ideas flow more easily in conversation and Claude can handle all content creation. By using Claude t handle botht he plan and content i can be sure it the context it needs so that both elements will be aligned with each other. This method gives me a solid foundation and permanent record that can be built upon, edited easily and re-used as a template for future projects.
+The development of Clarity followed a unique and innovative approach, leveraging AI assistance for enhanced planning and content creation:
 
-I began by providing it a flow chart i had made on UX/UI design and the project idea and brief criteria. We discussed each part of the design process from User stories and the strategy plane, to the surface plane and user testing. We then created a document that housed a rudimentary kanban board with list of to-do's in each plane that can be used to track my progress. 
+1. **AI-Assisted Planning**: The project planning was conducted in conversation with Anthropic's Claude AI. This method was chosen to facilitate a more fluid ideation process and ensure alignment between planning and content creation.
 
-I then moved through each stage of the process conversing with Claude regarding content, functionality and implementation. It is promopted to acts as a tutor and give guidance, but not create code unless asked to teach me how certain structures and components operate.
+2. **Comprehensive Documentation**: The planning process resulted in a solid foundation and permanent record that can be easily edited and reused as a template for future projects.
 
-The flow chart on UX design can be found here - [UX flow chart](https://guymitchy.github.io/UX-Flow/)
+3. **Structured Approach**: The planning began with a UX/UI design flow chart and project brief criteria. Each part of the design process, from user stories to user testing, was discussed in detail.
 
-The Plan and Kanban board can be found here [Plan and Kanban](./Plan-and-Kanban.md)
+4. **Kanban Board Creation**: A rudimentary Kanban board was created, listing tasks for each plane of the UX design process. This served as a progress tracking tool throughout the project.
+
+5. **Iterative Development**: The development process involved moving through each stage, discussing content, functionality, and implementation with Claude AI. The AI was prompted to act as a tutor, providing guidance without directly creating code unless specifically asked to explain certain structures and components.
+
+6. **Documentation**: The full plan and Kanban board can be found here: [Plan and Kanban](./Plan-and-Kanban.md)
+
+This approach allowed for a thorough exploration of ideas, consistent alignment between planning and execution, and a well-documented development process.
+
+## AI Assistance
+
+Throughout the development of Clarity, AI assistance was utilized in various aspects of the project. Here are some key areas where AI, specifically Claude, provided support:
+
+1. **Smooth Scrolling Implementation**: The smooth scrolling navigation was implemented with guidance from Claude AI. The AI provided explanations and suggestions for creating a smooth scrolling effect that adjusts for the height of the navbar.
+
+2. **Carousel Functionality**: The interactive carousel in the Coping Strategies section was developed with AI assistance. Claude helped in adapting and modifying existing carousel code to fit the project's specific needs, including touch event handling for mobile devices.
+
+3. **Responsive Design**: AI was consulted for responsive design techniques, ensuring the website looks and functions well across various device sizes.
+
+4. **Content Creation**: While the core content was mostly AI written, I refined and expanded on certain sections, ensuring clarity and consistency in tone and formatting.
+
+5. **Debugging**: When encountering bugs, such as the hero image height issue or carousel image consistency, AI was consulted for potential solutions and best practices.
+
+6. **Code Optimization**: AI provided suggestions for optimizing code structure and improving performance, particularly in JavaScript functions.
+
+It's important to note that while AI was a valuable tool in the development process, all final decisions and implementations were made by the developer. The AI served as a guide and collaborator, enhancing the development process rather than replacing human creativity and decision-making.
+
