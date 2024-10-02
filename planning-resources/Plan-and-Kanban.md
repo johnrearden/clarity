@@ -1,5 +1,5 @@
 
------------------------------------BRIEF CRITERIA AND MVP TASKS (INCOMPLETE)---------------------------------------
+-----------------------------------BRIEF CRITERIA AND LEARNING OUTCOMES---------------------------------------
 
 
 Brief Criteria
@@ -28,18 +28,8 @@ LO3 Learners will be able to deploy the one-page web application to a cloud plat
 LO4  Learners will be able to maximise future maintainability through documentation, code 
 structure, and organisation.
 
-Example Acceptance Criteria:
-- Hero section uses Bootstrap Jumbotron
-- Contains an encouraging message about mental health
-- Uses a calming color scheme
-- Includes a simple, relevant background image
 
-Tasks:
-- [ ] Design hero section layout
-- [ ] Choose background image
-- [ ] Write encouraging message
-- [ ] Implement in HTML/CSS using Bootstrap
-- [ ] Ensure responsive design
+
 
 
 
