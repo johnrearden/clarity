@@ -15,7 +15,7 @@ Clarity is a responsive, single-page website designed to provide support and res
 
 ## UX/UI
 
-The UX/UI design for Clarity follows a structured approach based on the five planes of user experience:
+The UX/UI design for Clarity follows a structured approach based on the five planes of user experience: (See [Planning and Development Process](#planning-and-development-process) and [Plan and Kanban](./planning-resources/Plan-and-Kanban.md) for more detail.)
 
 ### Strategy
 - Created user stories to define project objectives and user needs
@@ -43,7 +43,9 @@ The UX/UI design for Clarity follows a structured approach based on the five pla
 - Planned information architecture to present emotional information effectively
 
 ### Skeleton
-- Designed wireframes incorporating all key sections
+- Designed wireframes incorporating all key sections - See intial wireframes in planning document [Plan and Kanban](./planning-resources/Plan-and-Kanban.md)
+
+[Wireframe1](./README-images/wireframes/1.png)<br> [Wireframe2](./README-images/wireframes/2.png)<br> [Wireframe3](./README-images/wireframes/3.png)<br> [Wireframe4](./README-images/wireframes/4.png)
 - Ensured logical flow of information
 
 ### Surface
