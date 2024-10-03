@@ -1,700 +1,1027 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Clarity</title>
-    <meta name="description" content="Clarity: Your sanctuary for mental health support. Find guidance, resources, and coping strategies when feeling overwhelmed.
-        Expert advice on managing emotions and improving wellbeing.">
-    <meta name="keywords" content="mental health, coping, wellness, therapy, support, counseling, emotions">
-    <meta name="Guy Clements" content="Guy Clements- GuyAi">
+    <meta
+      name="description"
+      content="Clarity: Your sanctuary for mental health support. Find guidance, resources, and coping strategies when feeling overwhelmed.
+        Expert advice on managing emotions and improving wellbeing."
+    />
+    <meta
+      name="keywords"
+      content="mental health, coping, wellness, therapy, support, counseling, emotions"
+    />
+    <meta name="Guy Clements" content="Guy Clements- GuyAi" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-        integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/ec28ce8875.js" crossorigin="anonymous"></script>
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ec28ce8875.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-
+  <body>
     <!-- NAV -->
     <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light navbox">
-                        <span class="navbar-brand mb-0 h1">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbox">
+              <span class="navbar-brand mb-0 h1">
+                <a href="#home"
+                  ><img
+                    id="logo"
+                    src="assets/images/Clarity.svg"
+                    alt="Clarity Logo"
+                /></a>
+              </span>
 
-                            <a href="#home"><img id="logo" src="assets/images/Clarity.svg" alt="Clarity Logo"></a>
-                        </span>
+              <!-- HAMBURGER -->
+              <button
+                class="navbar-toggler"
+                id="menubtn"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarElements"
+                aria-controls="navbarElements"
+                aria-expanded="false"
+                aria-label="Open navigation menu"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-                        <!-- HAMBURGER -->
-                        <button class="navbar-toggler" id="menubtn" type="button" data-toggle="collapse"
-                            data-target="#navbarElements" aria-controls="navbarElements" aria-expanded="false"
-                            aria-label="Open navigation menu">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <!-- NAVBAR ELEMENTS -->
-                        <div class="collapse navbar-collapse" id="navbarElements">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item px-2">
-                                    <a class="nav-link active navbtns" href="#home">Home</a>
-                                </li>
-                                <li class="nav-item px-2">
-                                    <a class="nav-link navbtns" href="#emotions">Emotions</a>
-                                </li>
-                                <li class="nav-item px-2">
-                                    <a class="nav-link navbtns" href="#cope">How to Cope</a>
-                                </li>
-                                <li class="nav-item px-2">
-                                    <a class="nav-link navbtns" href="#mindfulness">Mindfulness Centre</a>
-                                </li>
-                                <li class="nav-item px-2">
-                                    <a class="nav-link navbtns" href="#resources">Get More Help</a>
-                                </li>
-                                <li class="nav-item px-2">
-                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Reach
-                                        Out</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+              <!-- NAVBAR ELEMENTS -->
+              <div class="collapse navbar-collapse" id="navbarElements">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item px-2">
+                    <a class="nav-link active navbtns" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link navbtns" href="#emotions">Emotions</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link navbtns" href="#cope">How to Cope</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link navbtns" href="#mindfulness"
+                      >Mindfulness Centre</a
+                    >
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link navbtns" href="#resources"
+                      >Get More Help</a
+                    >
+                  </li>
+                  <li class="nav-item px-2">
+                    <a
+                      class="nav-link"
+                      href="#"
+                      data-toggle="modal"
+                      data-target="#contactModal"
+                      >Reach Out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
     <!-- MAIN -->
     <main>
-        <!-- HOME -->
-        <section class="home" id="home">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col jumbocol p-0 mx-0">
-                        <div class="jumbotron jumbotron-fluid bpsky" role="img" aria-label="Blue and pink sky">
-                            <div class="container">
-                                <h1 class="display-4">Find your path to clarity.</h1>
-                                <p class="lead"></p>
-                                <p style="padding-left: 4px;"> Navigate your emotions - Learn coping strategies -
-                                    Practice mindfulness - Get resources</p>
-                            </div>
-                        </div>
-
-                    </div>
+      <!-- HOME -->
+      <section class="home" id="home">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col jumbocol p-0 mx-0">
+              <div
+                class="jumbotron jumbotron-fluid bpsky"
+                role="img"
+                aria-label="Blue and pink sky"
+              >
+                <div class="container">
+                  <h1 class="display-4">Find your path to clarity.</h1>
+                  <p class="lead"></p>
+                  <p style="padding-left: 4px">
+                    Navigate your emotions - Learn coping strategies - Practice
+                    mindfulness - Get resources
+                  </p>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- EMOTIONS -->
-        <section class="emotions" id="emotions">
-            <div class="container">
-                <div>
-                    <h2 class="mt-4">Emotions</h2>
-                    <h3 class="mt-4">It can be normal to feel unstable. Validating your emotions and learning to
-                        understand them is your first step towards clarity.</h3>
-                    <h3 class="mt-3 mb-5">How are you feeling?</h3>
+      <!-- EMOTIONS -->
+      <section class="emotions" id="emotions">
+        <div class="container">
+          <div>
+            <h2 class="mt-4">Emotions</h2>
+            <h3 class="mt-4">
+              It can be normal to feel unstable. Validating your emotions and
+              learning to understand them is your first step towards clarity.
+            </h3>
+            <h3 class="mt-3 mb-5">How are you feeling?</h3>
+          </div>
+          <div class="row">
+            <!-- CARD 1 STRESS-->
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div class="hvr-grow">
+                <div class="card mx-auto" style="width: 18rem">
+                  <!-- IMAGE WRAPPER -->
+                  <div class="imgwrapper">
+                    <img
+                      id="stress"
+                      src="assets/images/tinified/pexels-brett-sayles-1194196.jpg"
+                      class="card-img-top"
+                      alt="A man feeling the stress of life with his hand on his head."
+                    />
+                  </div>
+                  <!-- TEXT_CONTENT -->
+                  <h2 class="mt-4">Stressed</h2>
+                  <div class="card-body">
+                    <p class="card-text">
+                      You’re feeling stressed. It’s like there’s a constant
+                      pressure weighing you down, making everything seem urgent
+                      and overwhelming . Your mind races with tasks, and it’s
+                      hard to find a moment to breathe. Prioritizing self-care
+                      and relaxation can make a big difference. Remember, it’s
+                      okay to take breaks and ask for help, even if you feel
+                      like don't need it.
+                    </p>
+                  </div>
                 </div>
-                <div class="row">
-                    <!-- CARD 1 STRESS-->
-                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                        <div class="hvr-grow">
-                            <div class="card mx-auto" style="width: 18rem;">
-
-                                <!-- IMAGE WRAPPER -->
-                                <div class="imgwrapper">
-                                    <img id="stress" src="assets/images/tinified/pexels-brett-sayles-1194196.jpg"
-                                        class="card-img-top"
-                                        alt="A man feeling the stress of life with his hand on his head.">
-                                </div>
-                                <!-- TEXT_CONTENT -->
-                                <h2 class="mt-4">Stressed</h2>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        You’re feeling stressed. It’s like
-                                        there’s a constant pressure weighing you down,
-                                        making everything seem urgent and overwhelming
-                                        . Your mind races with tasks, and it’s hard to
-                                        find a moment to breathe. Prioritizing self-care and relaxation
-                                        can make a big difference. Remember, it’s okay to
-                                        take breaks and ask for help, even if you feel like don't need it. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD 2 ANXIETY-->
-                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                        <div class="hvr-grow">
-                            <div class="card mx-auto" style="width: 18rem;">
-                                <img src="assets/images/tinified/Anxieyt-edward-much.jpg" class="card-img-top"
-                                    alt="Anxiety by Edvard Munch depicts a scratchy black and white picture of people glaring at the viewer in public">
-                                <h2 class="mt-4">Anxious</h2>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        You’re feeling anxious. It’s that relentless worry that keeps your mind spinning
-                                        with “what if” scenarios. Your heart races, and it feels like you’re on edge.
-                                        Acknowledge
-                                        these feelings, and try grounding techniques or deep breathing exercises. You
-                                        can
-                                        try to think through your worries to build your confidence.
-                                        Reaching out can help ease that burden.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD 3 DEPRESSION -->
-                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                        <div class="hvr-grow">
-                            <div class="card mx-auto" style="width: 18rem;">
-                                <div class="imgwrapper">
-                                    <img src="assets/images/tinified/pexels-lucaspezeta-2967156.jpg" class="card-img-top"
-                                        alt="A noisey image of a woman sitting in the corner of a room on matress, with the bedsheets wrapped around her.">
-                                </div>
-                                <h2 class="mt-4">Depressed</h2>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        You’re feeling depressed. It’s as if a heavy fog has settled over your life,
-                                        dulling everything you once enjoyed. Tasks feel monumental, and isolation can
-                                        creep
-                                        in. If you're struggling with these sorts of feelings it’s important to know
-                                        you’re
-                                        not alone; talking to someone
-                                        you trust or seeking professional support can help lighten that load.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD 4 ANGER-->
-                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                        <div class="hvr-grow">
-                            <div class="card mx-auto" style="width: 18rem;">
-                                <div class="imgwrapper">
-                                    <img src="assets/images/tinified/anger_by_lilrolohere_d3bsrr4-fullview.jpg"
-                                        class="card-img-top"
-                                        alt="Anger by lilRoloHere. A painting in a scratchy cartoon style. A child rages with anger with his fist held high. ">
-                                </div>
-                                <h2 class="mt-4">Angry</h2>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        You’re feeling angry. It’s that intense surge of emotion that can feel all
-                                        consuming,
-                                        often triggered by something unfair or unjust. It’s okay to feel this way; you should try to
-                                        channel
-                                        that energy into constructive actions. It can be calming and allow you to take control.
-                                        Consider talking to someone who can help you process these feelings.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARD 5 LONELINESS -->
-                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                        <div class="hvr-grow">
-                            <div class="card mx-auto" style="width: 18rem;">
-                                <div class="imgwrapper">
-                                    <img src="assets/images/tinified/pexels-murvl-5990737.jpg" class="card-img-top"
-                                        alt="Man standing on a tiny rock completely surrounded by water">
-                                </div>
-                                <h2 class="mt-4">Lonely</h2>
-                                <div class="card-body">
-                                    <p class="card-text">You’re feeling lonely. It’s that deep sense of isolation, even
-                                        when
-                                        surrounded by others. You might
-                                        feel disconnected or like no one truly understands you, and be reluctant to say
-                                        what's really on your mind.
-                                        Try to find something you enjoy that you can share with others. Remember,
-                                        reaching out to someone can bridge that gap, and building connections takes
-                                        time.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- CARD 6 GRIEF -->
-                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                        <div class="hvr-grow">
-                            <div class="card mx-auto" style="width: 18rem;">
-                                <div class="imgwrapper">
-                                    <img src="assets/images/tinified/pexels-rdne-6670068.jpg" class="card-img-top"
-                                        alt="A cartoon style broken heart made from card on wooden table.">
-                                </div>
-                                <h2 class="mt-4">Bereft</h2>
-                                <div class="card-body">
-                                    <p class="card-text">You’re feeling grief. It’s an overwhelming sorrow that can hit
-                                        you
-                                        unexpectedly, leaving you with a deep sense of loss. Each day may bring
-                                        different
-                                        emotions
-                                        as you navigate through your memories. Remember, it’s okay to seek support from
-                                        friends,
-                                        family, or professionals. Validating and sharing your feelings can be incredibly
-                                        healing.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-        </section>
-
-
-        <!-- COPING STRATEGIES -->
-
-        <!-- IMAGE TRACK HTML FROM  https://codepen.io/Hyperplexed/full/MWXBRBp - EDITED -->
-
-        <section class="cope py-3 py-md-5" id="cope">
-            <div class="container">
-                <div>
-                    <h2 class="mb-4">Coping Strategies</h2>
-                    <h3 class="mb-3">Once you have validated your emotions,
-                        having a coping strategy can help you ground yourself in something familiar,
-                        and allow you to take back control.</h3>
-                    <h3 class="mb-3">Take a look at our carousel of coping strategies and find some that you think
-                        might work for you.</h3>
-                </div>
-                <div class="image-track-container my-0">
-                    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-                        <span class="grabtab my-auto"><i class="fa-solid fa-grip-lines-vertical"></i></span>
-                        <div class="image-container d-flex justify-content-center">
-                            <img class="image" src="./assets/images/pnbsky.png" draggable="false" alt="Image of a pink and blue sky">
-                            <div class="image-text journaling">
-                                <p>Journaling and Thought Tracking</p>
-                                <p class="mb-0">Write freely for 10 minutes each day without judgment.<br><br>
-                                    Use prompts like "Today I felt..." or "I'm grateful for..."<br><br>
-                                    Record your thoughts and identify any patterns or triggers.<br><br>
-                                    Challenge negative thoughts: Is there evidence for or against them?<br><br>
-                                    Note your achievements, no matter how small.</p>
-                            </div>
-                        </div>
-                
-                        <div class="image-container d-flex justify-content-center">
-                            <img class="image" src="./assets/images/paralax-backgrounds/2.png" draggable="false" alt="An image of a seaside scene with pink and blue colours">
-                            <div class="image-text communicating">
-                                <p>Communicating Feelings</p>
-                                <p class="mb-0">Use "I" statements: "I feel..." instead of "You make me feel..."<br><br>
-                                    Be specific about your emotions: "I feel lonely" or "I feel anxious"<br><br>
-                                    Listen actively: Repeat back what you've heard to ensure understanding<br><br>
-                                    Choose the right time and place for important conversations<br><br>
-                                    Be open to feedback and different perspectives</p>
-                            </div>
-                        </div>
-                        
-                        <div class="image-container d-flex justify-content-center">
-                            <img class="image" src="./assets/images/paralax-backgrounds/3.png" draggable="false" alt="An image of a lake with pink and blue colors">
-                            <div class="image-text practical">
-                                <p>Practical Methods</p>
-                                <p class="mb-0">Practice deep breathing<br> Inhale for 4 counts, hold for 4, exhale for 4<br><br>
-                                    Identify 5 things you see, 4 you feel, 3 you hear, 2 you smell, 1 you taste<br><br>
-                                    Tense and relax each muscle group from toes to head<br><br>
-                                    Visualize a calm, safe place when stressed</p>
-                            </div>
-                        </div>
-                        
-                        <div class="image-container d-flex justify-content-center">
-                            <img class="image" src="./assets/images/paralax-backgrounds/4.png" draggable="false" alt="an image of a crescent moon on a pink and blue sky">
-                            <div class="image-text regulation">
-                                <p>Emotional Regulation Exercises</p>
-                                <p class="mb-0">Practice mindfulness <br> Focus on your breath for 5 minutes daily
-                                    Use positive self-talk: Replace negative thoughts with encouraging ones<br><br>
-                                    Engage in physical activity: Even a short walk can boost mood<br><br>
-                                    Create a self-soothing kit with comforting items<br><br>
-                                    Set healthy boundaries to protect your emotional well-being</p>
-                            </div>
-                        
-                        </div>
-                        <span class="grabtab my-auto"><i class="fa-solid fa-grip-lines-vertical"></i></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <hr>
-
-        <!-- MINDFULNESS -->
-        <section class="mindfulness py-3 py-md-5" id="mindfulness">
-            <div class="container">
-                <div>
-                    <h2 class="mb-4">Mindfulness Centre</h2>
-                    <h3 class="mb-3">We briefly touched upon mindfulness in our coping strategies section, and while
-                        most of our
-                        coping strategies are a
-                        great way to deal with present emotional issues, mindfulness
-                        can provide a long-term approach to emotional regulation.</h3>
-                    <h3 class="mb-3">It teaches us to observe our thoughts and feelings without judgment, fostering a
-                        deeper
-                        understanding of our emotional landscape and promoting lasting resilience.</h3>
-                    <h3 class="mb-5">Explore our mindfulness section to learn techniques that can help you cultivate
-                        awareness,
-                        balance,
-                        and emotional stability in your daily life.</h3>
-                </div>
-                <div class="row">
-                    <div class="col">
-
-                        <!-- TAB NAVIGATION -->
-                        <ul class="nav nav-tabs tabnav justify-content-center" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link active" id="what-is-tab" data-toggle="tab" href="#what-is" role="tab"
-                                    aria-controls="what-is" aria-selected="true">What is Mindfulness?</a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="techniques-tab" data-toggle="tab" href="#techniques" role="tab"
-                                    aria-controls="techniques" aria-selected="false">Techniques</a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="daily-practice-tab" data-toggle="tab" href="#daily-practice"
-                                    role="tab" aria-controls="daily-practice" aria-selected="false">Daily Practice</a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="resources-tab" data-toggle="tab" href="#mindfulness-resources"
-                                    role="tab" aria-controls="resources" aria-selected="false">Resources</a>
-                            </li>
-                        </ul>
-                        <!-- TAB CONTENT -->
-                        <!-- PUT ALL CONTENT IN A DIV _ THIS SEEMS TO STOP THE PAGE SCROLLING TO THE CONTENT ALLOWING SWITCHING EFFECT -->
-                        <div class="tab-content" id="myTabContent">
-                            <!-- TAB 1 CONTENT -->
-                            <div class="tab-pane fade show active mt-5 text-center" id="what-is" role="tabpanel">
-                                <h4 class="mb-4">What is Mindfulness?</h4>
-                                <p>Mindfulness is the practice of being fully present and engaged in the moment, aware
-                                    of
-                                    your thoughts and feelings without distraction or judgment. It's about paying
-                                    attention
-                                    to our thoughts, feelings, bodily sensations, and surrounding environment in a
-                                    gentle,
-                                    nurturing way.</p>
-                                <h5 class="mt-4">The Benefits</h5>
-                                <p class="mb-0">Regular mindfulness practice can reduce stress, improve focus, enhance
-                                    emotional
-                                    regulation, and promote overall well-being.</p>
-                            </div>
-                            <!-- TAB 2 CONTENT -->
-
-                            <div class="tab-pane fade mt-5" id="techniques" role="tabpanel">
-                                <h4 class="mb-4">Basic Mindfulness Techniques</h4>
-                                <h5 class="mt-4">Deep Breathing</h5>
-                                <p>Find a comfortable position. Breathe in slowly through your nose for 4 counts, hold
-                                    for
-                                    4, then exhale through your mouth for 4 counts. Repeat for 5-10 cycles.</p>
-                                <h5 class="mt-4">Body Scan</h5>
-                                <p>Lie down comfortably. Focus your attention slowly from your toes to the top of your
-                                    head,
-                                    noticing any sensations without trying to change them.</p>
-                                <h5 class="mt-4">Mindful Observation</h5>
-                                <p class="mb-0">Choose an object in your immediate environment. Focus on watching it for
-                                    a minute or
-                                    two.
-                                    Look at it as if you're seeing it for the first time.</p>
-                            </div>
-                            <!-- TAB 3 CONTENT -->
-                            <div class="tab-pane fade mt-5" id="daily-practice" role="tabpanel">
-                                <h4 class="mb-4">Mindfulness in Daily Life</h4>
-                                <h5 class="mt-4">Mindful Eating</h5>
-                                <p>Before eating, take a moment to appreciate the colors and smells of your food. Eat
-                                    slowly, savoring each bite and noticing the flavors and textures.</p>
-                                <h5 class="mt-4">Mindful Walking</h5>
-                                <p class="mb-0">As you walk, pay attention to the sensation of your feet touching the
-                                    ground. Notice
-                                    the
-                                    movement of your body and your breath. Observe your surroundings without judgment.
-                                </p>
-                            </div>
-                            <!-- TAB 4 CONTENT -->
-                            <div class="tab-pane fade mt-5" id="mindfulness-resources" role="tabpanel">
-                                <h4 class="mb-4">Resources for Further Learning</h4>
-                                <h5 class="mt-4 mb-3">Books</h5>
-
-                                <p><a class="text-decoration-none"
-                                        href="https://books.google.co.uk/books?id=aV_YAAAAQBAJ&printsec=frontcover&redir_esc=y#v=onepage&q&f=false"
-                                        target="_blank">"Mindfulness:
-                                        An Eight-Week Plan for Finding Peace in a Frantic World" by Mark
-                                        Williams and Danny Penman</a></p>
-                                <p><a class="text-decoration-none"
-                                        href="https://www.google.co.uk/books/edition/The_Miracle_of_Mindfulness/z80BfVrD6poC?hl=en&gbpv=0&kptab=overview"
-                                        target="_blank">"The
-                                        Miracle of Mindfulness" by Thich Nhat Hanh</a></p>
-
-                                <h5 class="mt-4 mb-3">Apps</h5>
-
-                                <p><a class="text-decoration-none" href="https://insighttimer.com/en-gb"
-                                        target="_blank">Insight
-                                        Timer</a></p>
-                                <p><a class="text-decoration-none" href="https://www.headspace.com"
-                                        target="_blank">Headspace</a></p>
-                                <p class="mb-0"><a class="text-decoration-none" href="https://www.calm.com"
-                                        target="_blank">Calm</a></p>
-                                        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <!-- RESOURCES -->
-        <section class="resources py-3 py-md-5" id="resources">
-            <div class="container">
-                <div>
-                    <h2 class="mt-0 mb-4">Get More Help</h2>
-                    <h3 class="mb-3">Understanding and managing your mental health is a journey,
-                        and sometimes we all need a little extra support along the way.
-                    </h3>
-                    <h3 class="mb-3">
-                        While Clarity provides information and strategies to help you cope,
-                        there are times when professional help or specialized resources can make a significant
-                        difference.</h3>
-
-
-                    <h3 class="mb-3">
-                        We've compiled a list of trusted UK-based organizations that offer various forms of support.
-                        Take a moment to explore the accordion below.</h3>
-
-                    <h3 class="mb-5">
-                        Remember, reaching out for help is a sign of strength, not weakness.</h3>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <div class="accordion" id="resourcesAccordion">
-
-                            
-                            <!-- Samaritans -->
-                            <div class="card mb-3">
-                                <div class="card-header" id="headingSamaritans">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link btn-block text-center text-decoration-none"
-                                            type="button" data-toggle="collapse" data-target="#collapseSamaritans"
-                                            aria-expanded="false" aria-controls="collapseSamaritans">
-                                            Samaritans
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseSamaritans" class="collapse text-center"
-                                    aria-labelledby="headingSamaritans" data-parent="#resourcesAccordion">
-                                    <div class="card-body">
-                                        <p>24/7 listening service providing emotional support to anyone in distress.</p>
-                                        <p>Phone: 116 123</p>
-                                        <p>Website: <a class="text-decoration-none" href="https://www.samaritans.org"
-                                                target="_blank">www.samaritans.org</a></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mind -->
-                            <div class="card mb-3">
-                                <div class="card-header" id="headingMind">
-                                    <h2 class="mb-0">
-                                        <button
-                                            class="btn btn-link btn-block text-center collapsed text-decoration-none"
-                                            type="button" data-toggle="collapse" data-target="#collapseMind"
-                                            aria-expanded="false" aria-controls="collapseMind">
-                                            Mind
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseMind" class="collapse text-center" aria-labelledby="headingMind"
-                                    data-parent="#resourcesAccordion">
-                                    <div class="card-body">
-                                        <p>Provides advice and support to empower anyone experiencing a mental health
-                                            problem.</p>
-                                        <p>Website: <a class="text-decoration-none" href="https://www.mind.org.uk"
-                                                target="_blank">www.mind.org.uk</a></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- NHS Mental Health Services -->
-                            <div class="card mb-3">
-                                <div class="card-header" id="headingNHS">
-                                    <h2 class="mb-0">
-                                        <button
-                                            class="btn btn-link btn-block text-center collapsed text-decoration-none"
-                                            type="button" data-toggle="collapse" data-target="#collapseNHS"
-                                            aria-expanded="false" aria-controls="collapseNHS">
-                                            NHS Mental Health Services
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseNHS" class="collapse text-center" aria-labelledby="headingNHS"
-                                    data-parent="#resourcesAccordion">
-                                    <div class="card-body">
-                                        <p>Offers information on conditions, treatments, and where to get help.</p>
-                                        <p>Website: <a class="text-decoration-none"
-                                                href="https://www.nhs.uk/mental-health/"
-                                                target="_blank">www.nhs.uk/mental-health/</a></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Young Minds -->
-                            <div class="card mb-3">
-                                <div class="card-header" id="headingYoungMinds">
-                                    <h2 class="mb-0">
-                                        <button
-                                            class="btn btn-link btn-block text-center collapsed text-decoration-none"
-                                            type="button" data-toggle="collapse" data-target="#collapseYoungMinds"
-                                            aria-expanded="false" aria-controls="collapseYoungMinds">
-                                            Young Minds
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseYoungMinds" class="collapse text-center"
-                                    aria-labelledby="headingYoungMinds" data-parent="#resourcesAccordion">
-                                    <div class="card-body">
-                                        <p>UK's leading charity fighting for children and young people's mental health.
-                                        </p>
-                                        <p>Website: <a class="text-decoration-none" href="https://www.youngminds.org.uk"
-                                                target="_blank">www.youngminds.org.uk</a></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Anxiety UK -->
-                            <div class="card mb-3">
-                                <div class="card-header" id="headingAnxietyUK">
-                                    <h2 class="mb-0">
-                                        <button
-                                            class="btn btn-link btn-block text-center collapsed text-decoration-none"
-                                            type="button" data-toggle="collapse" data-target="#collapseAnxietyUK"
-                                            aria-expanded="false" aria-controls="collapseAnxietyUK">
-                                            Anxiety UK
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseAnxietyUK" class="collapse text-center"
-                                    aria-labelledby="headingAnxietyUK" data-parent="#resourcesAccordion">
-                                    <div class="card-body">
-                                        <p>Provides support for those living with anxiety and anxiety-based depression.
-                                        </p>
-                                        <p>Website: <a class="text-decoration-none" href="https://www.anxietyuk.org.uk"
-                                                target="_blank">www.anxietyuk.org.uk</a></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- BACP -->
-                            <div class="card">
-                                <div class="card-header" id="headingBACP">
-                                    <h2 class="mb-0">
-                                        <button
-                                            class="btn btn-link btn-block text-center collapsed text-decoration-none"
-                                            type="button" data-toggle="collapse" data-target="#collapseBACP"
-                                            aria-expanded="false" aria-controls="collapseBACP">
-                                            British Association for Counselling and Psychotherapy (BACP)
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseBACP" class="collapse text-center" aria-labelledby="headingBACP"
-                                    data-parent="#resourcesAccordion">
-                                    <div class="card-body">
-                                        <p>Provides information about counselling and psychotherapy, including a
-                                            therapist directory.</p>
-                                        <p>Website: <a class="text-decoration-none" href="//www.bacp.co.uk"
-                                                target="_blank">www.bacp.co.uk</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-
-                </div>
+              </div>
             </div>
 
+            <!-- CARD 2 ANXIETY-->
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div class="hvr-grow">
+                <div class="card mx-auto" style="width: 18rem">
+                  <img
+                    src="assets/images/tinified/Anxieyt-edward-much.jpg"
+                    class="card-img-top"
+                    alt="Anxiety by Edvard Munch depicts a scratchy black and white picture of people glaring at the viewer in public"
+                  />
+                  <h2 class="mt-4">Anxious</h2>
+                  <div class="card-body">
+                    <p class="card-text">
+                      You’re feeling anxious. It’s that relentless worry that
+                      keeps your mind spinning with “what if” scenarios. Your
+                      heart races, and it feels like you’re on edge. Acknowledge
+                      these feelings, and try grounding techniques or deep
+                      breathing exercises. You can try to think through your
+                      worries to build your confidence. Reaching out can help
+                      ease that burden.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        </section>
+            <!-- CARD 3 DEPRESSION -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div class="hvr-grow">
+                <div class="card mx-auto" style="width: 18rem">
+                  <div class="imgwrapper">
+                    <img
+                      src="assets/images/tinified/pexels-lucaspezeta-2967156.jpg"
+                      class="card-img-top"
+                      alt="A noisey image of a woman sitting in the corner of a room on matress, with the bedsheets wrapped around her."
+                    />
+                  </div>
+                  <h2 class="mt-4">Depressed</h2>
+                  <div class="card-body">
+                    <p class="card-text">
+                      You’re feeling depressed. It’s as if a heavy fog has
+                      settled over your life, dulling everything you once
+                      enjoyed. Tasks feel monumental, and isolation can creep
+                      in. If you're struggling with these sorts of feelings it’s
+                      important to know you’re not alone; talking to someone you
+                      trust or seeking professional support can help lighten
+                      that load.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!-- CARD 4 ANGER-->
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div class="hvr-grow">
+                <div class="card mx-auto" style="width: 18rem">
+                  <div class="imgwrapper">
+                    <img
+                      src="assets/images/tinified/anger_by_lilrolohere_d3bsrr4-fullview.jpg"
+                      class="card-img-top"
+                      alt="Anger by lilRoloHere. A painting in a scratchy cartoon style. A child rages with anger with his fist held high. "
+                    />
+                  </div>
+                  <h2 class="mt-4">Angry</h2>
+                  <div class="card-body">
+                    <p class="card-text">
+                      You’re feeling angry. It’s that intense surge of emotion
+                      that can feel all consuming, often triggered by something
+                      unfair or unjust. It’s okay to feel this way; you should
+                      try to channel that energy into constructive actions. It
+                      can be calming and allow you to take control. Consider
+                      talking to someone who can help you process these
+                      feelings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!-- CARD 5 LONELINESS -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div class="hvr-grow">
+                <div class="card mx-auto" style="width: 18rem">
+                  <div class="imgwrapper">
+                    <img
+                      src="assets/images/tinified/pexels-murvl-5990737.jpg"
+                      class="card-img-top"
+                      alt="Man standing on a tiny rock completely surrounded by water"
+                    />
+                  </div>
+                  <h2 class="mt-4">Lonely</h2>
+                  <div class="card-body">
+                    <p class="card-text">
+                      You’re feeling lonely. It’s that deep sense of isolation,
+                      even when surrounded by others. You might feel
+                      disconnected or like no one truly understands you, and be
+                      reluctant to say what's really on your mind. Try to find
+                      something you enjoy that you can share with others.
+                      Remember, reaching out to someone can bridge that gap, and
+                      building connections takes time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 6 GRIEF -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div class="hvr-grow">
+                <div class="card mx-auto" style="width: 18rem">
+                  <div class="imgwrapper">
+                    <img
+                      src="assets/images/tinified/pexels-rdne-6670068.jpg"
+                      class="card-img-top"
+                      alt="A cartoon style broken heart made from card on wooden table."
+                    />
+                  </div>
+                  <h2 class="mt-4">Bereft</h2>
+                  <div class="card-body">
+                    <p class="card-text">
+                      You’re feeling grief. It’s an overwhelming sorrow that can
+                      hit you unexpectedly, leaving you with a deep sense of
+                      loss. Each day may bring different emotions as you
+                      navigate through your memories. Remember, it’s okay to
+                      seek support from friends, family, or professionals.
+                      Validating and sharing your feelings can be incredibly
+                      healing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <!-- COPING STRATEGIES -->
+
+      <!-- IMAGE TRACK HTML FROM  https://codepen.io/Hyperplexed/full/MWXBRBp - EDITED -->
+
+      <section class="cope py-3 py-md-5" id="cope">
+        <div class="container">
+          <div>
+            <h2 class="mb-4">Coping Strategies</h2>
+            <h3 class="mb-3">
+              Once you have validated your emotions, having a coping strategy
+              can help you ground yourself in something familiar, and allow you
+              to take back control.
+            </h3>
+            <h3 class="mb-3">
+              Take a look at our carousel of coping strategies and find some
+              that you think might work for you.
+            </h3>
+          </div>
+          <div class="image-track-container my-0">
+            <div
+              id="image-track"
+              data-mouse-down-at="0"
+              data-prev-percentage="0"
+            >
+              <span class="grabtab my-auto"
+                ><i class="fa-solid fa-grip-lines-vertical"></i
+              ></span>
+              <div class="image-container d-flex justify-content-center">
+                <img
+                  class="image"
+                  src="./assets/images/pnbsky.png"
+                  draggable="false"
+                  alt="Image of a pink and blue sky"
+                />
+                <div class="image-text journaling">
+                  <p>Journaling and Thought Tracking</p>
+                  <p class="mb-0">
+                    Write freely for 10 minutes each day without judgment.<br /><br />
+                    Use prompts like "Today I felt..." or "I'm grateful
+                    for..."<br /><br />
+                    Record your thoughts and identify any patterns or
+                    triggers.<br /><br />
+                    Challenge negative thoughts: Is there evidence for or
+                    against them?<br /><br />
+                    Note your achievements, no matter how small.
+                  </p>
+                </div>
+              </div>
+
+              <div class="image-container d-flex justify-content-center">
+                <img
+                  class="image"
+                  src="./assets/images/paralax-backgrounds/2.png"
+                  draggable="false"
+                  alt="An image of a seaside scene with pink and blue colours"
+                />
+                <div class="image-text communicating">
+                  <p>Communicating Feelings</p>
+                  <p class="mb-0">
+                    Use "I" statements: "I feel..." instead of "You make me
+                    feel..."<br /><br />
+                    Be specific about your emotions: "I feel lonely" or "I feel
+                    anxious"<br /><br />
+                    Listen actively: Repeat back what you've heard to ensure
+                    understanding<br /><br />
+                    Choose the right time and place for important
+                    conversations<br /><br />
+                    Be open to feedback and different perspectives
+                  </p>
+                </div>
+              </div>
+
+              <div class="image-container d-flex justify-content-center">
+                <img
+                  class="image"
+                  src="./assets/images/paralax-backgrounds/3.png"
+                  draggable="false"
+                  alt="An image of a lake with pink and blue colors"
+                />
+                <div class="image-text practical">
+                  <p>Practical Methods</p>
+                  <p class="mb-0">
+                    Practice deep breathing<br />
+                    Inhale for 4 counts, hold for 4, exhale for 4<br /><br />
+                    Identify 5 things you see, 4 you feel, 3 you hear, 2 you
+                    smell, 1 you taste<br /><br />
+                    Tense and relax each muscle group from toes to head<br /><br />
+                    Visualize a calm, safe place when stressed
+                  </p>
+                </div>
+              </div>
+
+              <div class="image-container d-flex justify-content-center">
+                <img
+                  class="image"
+                  src="./assets/images/paralax-backgrounds/4.png"
+                  draggable="false"
+                  alt="an image of a crescent moon on a pink and blue sky"
+                />
+                <div class="image-text regulation">
+                  <p>Emotional Regulation Exercises</p>
+                  <p class="mb-0">
+                    Practice mindfulness <br />
+                    Focus on your breath for 5 minutes daily Use positive
+                    self-talk: Replace negative thoughts with encouraging
+                    ones<br /><br />
+                    Engage in physical activity: Even a short walk can boost
+                    mood<br /><br />
+                    Create a self-soothing kit with comforting items<br /><br />
+                    Set healthy boundaries to protect your emotional well-being
+                  </p>
+                </div>
+              </div>
+              <span class="grabtab my-auto"
+                ><i class="fa-solid fa-grip-lines-vertical"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- MINDFULNESS -->
+      <section class="mindfulness py-3 py-md-5" id="mindfulness">
+        <div class="container">
+          <div>
+            <h2 class="mb-4">Mindfulness Centre</h2>
+            <h3 class="mb-3">
+              We briefly touched upon mindfulness in our coping strategies
+              section, and while most of our coping strategies are a great way
+              to deal with present emotional issues, mindfulness can provide a
+              long-term approach to emotional regulation.
+            </h3>
+            <h3 class="mb-3">
+              It teaches us to observe our thoughts and feelings without
+              judgment, fostering a deeper understanding of our emotional
+              landscape and promoting lasting resilience.
+            </h3>
+            <h3 class="mb-5">
+              Explore our mindfulness section to learn techniques that can help
+              you cultivate awareness, balance, and emotional stability in your
+              daily life.
+            </h3>
+          </div>
+          <div class="row">
+            <div class="col">
+              <!-- TAB NAVIGATION -->
+              <ul
+                class="nav nav-tabs tabnav justify-content-center"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    id="what-is-tab"
+                    data-toggle="tab"
+                    href="#what-is"
+                    role="tab"
+                    aria-controls="what-is"
+                    aria-selected="true"
+                    >What is Mindfulness?</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="techniques-tab"
+                    data-toggle="tab"
+                    href="#techniques"
+                    role="tab"
+                    aria-controls="techniques"
+                    aria-selected="false"
+                    >Techniques</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="daily-practice-tab"
+                    data-toggle="tab"
+                    href="#daily-practice"
+                    role="tab"
+                    aria-controls="daily-practice"
+                    aria-selected="false"
+                    >Daily Practice</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="resources-tab"
+                    data-toggle="tab"
+                    href="#mindfulness-resources"
+                    role="tab"
+                    aria-controls="resources"
+                    aria-selected="false"
+                    >Resources</a
+                  >
+                </li>
+              </ul>
+              <!-- TAB CONTENT -->
+              <!-- PUT ALL CONTENT IN A DIV _ THIS SEEMS TO STOP THE PAGE SCROLLING TO THE CONTENT ALLOWING SWITCHING EFFECT -->
+              <div class="tab-content" id="myTabContent">
+                <!-- TAB 1 CONTENT -->
+                <div
+                  class="tab-pane fade show active mt-5 text-center"
+                  id="what-is"
+                  role="tabpanel"
+                >
+                  <h4 class="mb-4">What is Mindfulness?</h4>
+                  <p>
+                    Mindfulness is the practice of being fully present and
+                    engaged in the moment, aware of your thoughts and feelings
+                    without distraction or judgment. It's about paying attention
+                    to our thoughts, feelings, bodily sensations, and
+                    surrounding environment in a gentle, nurturing way.
+                  </p>
+                  <h5 class="mt-4">The Benefits</h5>
+                  <p class="mb-0">
+                    Regular mindfulness practice can reduce stress, improve
+                    focus, enhance emotional regulation, and promote overall
+                    well-being.
+                  </p>
+                </div>
+                <!-- TAB 2 CONTENT -->
+
+                <div class="tab-pane fade mt-5" id="techniques" role="tabpanel">
+                  <h4 class="mb-4">Basic Mindfulness Techniques</h4>
+                  <h5 class="mt-4">Deep Breathing</h5>
+                  <p>
+                    Find a comfortable position. Breathe in slowly through your
+                    nose for 4 counts, hold for 4, then exhale through your
+                    mouth for 4 counts. Repeat for 5-10 cycles.
+                  </p>
+                  <h5 class="mt-4">Body Scan</h5>
+                  <p>
+                    Lie down comfortably. Focus your attention slowly from your
+                    toes to the top of your head, noticing any sensations
+                    without trying to change them.
+                  </p>
+                  <h5 class="mt-4">Mindful Observation</h5>
+                  <p class="mb-0">
+                    Choose an object in your immediate environment. Focus on
+                    watching it for a minute or two. Look at it as if you're
+                    seeing it for the first time.
+                  </p>
+                </div>
+                <!-- TAB 3 CONTENT -->
+                <div
+                  class="tab-pane fade mt-5"
+                  id="daily-practice"
+                  role="tabpanel"
+                >
+                  <h4 class="mb-4">Mindfulness in Daily Life</h4>
+                  <h5 class="mt-4">Mindful Eating</h5>
+                  <p>
+                    Before eating, take a moment to appreciate the colors and
+                    smells of your food. Eat slowly, savoring each bite and
+                    noticing the flavors and textures.
+                  </p>
+                  <h5 class="mt-4">Mindful Walking</h5>
+                  <p class="mb-0">
+                    As you walk, pay attention to the sensation of your feet
+                    touching the ground. Notice the movement of your body and
+                    your breath. Observe your surroundings without judgment.
+                  </p>
+                </div>
+                <!-- TAB 4 CONTENT -->
+                <div
+                  class="tab-pane fade mt-5"
+                  id="mindfulness-resources"
+                  role="tabpanel"
+                >
+                  <h4 class="mb-4">Resources for Further Learning</h4>
+                  <h5 class="mt-4 mb-3">Books</h5>
+
+                  <p>
+                    <a
+                      class="text-decoration-none"
+                      href="https://books.google.co.uk/books?id=aV_YAAAAQBAJ&printsec=frontcover&redir_esc=y#v=onepage&q&f=false"
+                      target="_blank"
+                      >"Mindfulness: An Eight-Week Plan for Finding Peace in a
+                      Frantic World" by Mark Williams and Danny Penman</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      class="text-decoration-none"
+                      href="https://www.google.co.uk/books/edition/The_Miracle_of_Mindfulness/z80BfVrD6poC?hl=en&gbpv=0&kptab=overview"
+                      target="_blank"
+                      >"The Miracle of Mindfulness" by Thich Nhat Hanh</a
+                    >
+                  </p>
+
+                  <h5 class="mt-4 mb-3">Apps</h5>
+
+                  <p>
+                    <a
+                      class="text-decoration-none"
+                      href="https://insighttimer.com/en-gb"
+                      target="_blank"
+                      >Insight Timer</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      class="text-decoration-none"
+                      href="https://www.headspace.com"
+                      target="_blank"
+                      >Headspace</a
+                    >
+                  </p>
+                  <p class="mb-0">
+                    <a
+                      class="text-decoration-none"
+                      href="https://www.calm.com"
+                      target="_blank"
+                      >Calm</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- RESOURCES -->
+      <section class="resources py-3 py-md-5" id="resources">
+        <div class="container">
+          <div>
+            <h2 class="mt-0 mb-4">Get More Help</h2>
+            <h3 class="mb-3">
+              Understanding and managing your mental health is a journey, and
+              sometimes we all need a little extra support along the way.
+            </h3>
+            <h3 class="mb-3">
+              While Clarity provides information and strategies to help you
+              cope, there are times when professional help or specialized
+              resources can make a significant difference.
+            </h3>
+
+            <h3 class="mb-3">
+              We've compiled a list of trusted UK-based organizations that offer
+              various forms of support. Take a moment to explore the accordion
+              below.
+            </h3>
+
+            <h3 class="mb-5">
+              Remember, reaching out for help is a sign of strength, not
+              weakness.
+            </h3>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="accordion" id="resourcesAccordion">
+                <!-- Samaritans -->
+                <div class="card mb-3">
+                  <div class="card-header" id="headingSamaritans">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-center text-decoration-none"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseSamaritans"
+                        aria-expanded="false"
+                        aria-controls="collapseSamaritans"
+                      >
+                        Samaritans
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseSamaritans"
+                    class="collapse text-center"
+                    aria-labelledby="headingSamaritans"
+                    data-parent="#resourcesAccordion"
+                  >
+                    <div class="card-body">
+                      <p>
+                        24/7 listening service providing emotional support to
+                        anyone in distress.
+                      </p>
+                      <p>Phone: 116 123</p>
+                      <p>
+                        Website:
+                        <a
+                          class="text-decoration-none"
+                          href="https://www.samaritans.org"
+                          target="_blank"
+                          >www.samaritans.org</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mind -->
+                <div class="card mb-3">
+                  <div class="card-header" id="headingMind">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-center collapsed text-decoration-none"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseMind"
+                        aria-expanded="false"
+                        aria-controls="collapseMind"
+                      >
+                        Mind
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseMind"
+                    class="collapse text-center"
+                    aria-labelledby="headingMind"
+                    data-parent="#resourcesAccordion"
+                  >
+                    <div class="card-body">
+                      <p>
+                        Provides advice and support to empower anyone
+                        experiencing a mental health problem.
+                      </p>
+                      <p>
+                        Website:
+                        <a
+                          class="text-decoration-none"
+                          href="https://www.mind.org.uk"
+                          target="_blank"
+                          >www.mind.org.uk</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- NHS Mental Health Services -->
+                <div class="card mb-3">
+                  <div class="card-header" id="headingNHS">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-center collapsed text-decoration-none"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseNHS"
+                        aria-expanded="false"
+                        aria-controls="collapseNHS"
+                      >
+                        NHS Mental Health Services
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseNHS"
+                    class="collapse text-center"
+                    aria-labelledby="headingNHS"
+                    data-parent="#resourcesAccordion"
+                  >
+                    <div class="card-body">
+                      <p>
+                        Offers information on conditions, treatments, and where
+                        to get help.
+                      </p>
+                      <p>
+                        Website:
+                        <a
+                          class="text-decoration-none"
+                          href="https://www.nhs.uk/mental-health/"
+                          target="_blank"
+                          >www.nhs.uk/mental-health/</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Young Minds -->
+                <div class="card mb-3">
+                  <div class="card-header" id="headingYoungMinds">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-center collapsed text-decoration-none"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseYoungMinds"
+                        aria-expanded="false"
+                        aria-controls="collapseYoungMinds"
+                      >
+                        Young Minds
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseYoungMinds"
+                    class="collapse text-center"
+                    aria-labelledby="headingYoungMinds"
+                    data-parent="#resourcesAccordion"
+                  >
+                    <div class="card-body">
+                      <p>
+                        UK's leading charity fighting for children and young
+                        people's mental health.
+                      </p>
+                      <p>
+                        Website:
+                        <a
+                          class="text-decoration-none"
+                          href="https://www.youngminds.org.uk"
+                          target="_blank"
+                          >www.youngminds.org.uk</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Anxiety UK -->
+                <div class="card mb-3">
+                  <div class="card-header" id="headingAnxietyUK">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-center collapsed text-decoration-none"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseAnxietyUK"
+                        aria-expanded="false"
+                        aria-controls="collapseAnxietyUK"
+                      >
+                        Anxiety UK
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseAnxietyUK"
+                    class="collapse text-center"
+                    aria-labelledby="headingAnxietyUK"
+                    data-parent="#resourcesAccordion"
+                  >
+                    <div class="card-body">
+                      <p>
+                        Provides support for those living with anxiety and
+                        anxiety-based depression.
+                      </p>
+                      <p>
+                        Website:
+                        <a
+                          class="text-decoration-none"
+                          href="https://www.anxietyuk.org.uk"
+                          target="_blank"
+                          >www.anxietyuk.org.uk</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- BACP -->
+                <div class="card">
+                  <div class="card-header" id="headingBACP">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-center collapsed text-decoration-none"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseBACP"
+                        aria-expanded="false"
+                        aria-controls="collapseBACP"
+                      >
+                        British Association for Counselling and Psychotherapy
+                        (BACP)
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseBACP"
+                    class="collapse text-center"
+                    aria-labelledby="headingBACP"
+                    data-parent="#resourcesAccordion"
+                  >
+                    <div class="card-body">
+                      <p>
+                        Provides information about counselling and
+                        psychotherapy, including a therapist directory.
+                      </p>
+                      <p>
+                        Website:
+                        <a
+                          class="text-decoration-none"
+                          href="//www.bacp.co.uk"
+                          target="_blank"
+                          >www.bacp.co.uk</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- FOOTER -->
     <footer class="footer bg-light pt-2">
-
-        <div class="container-fluid">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-4 col-md-3 d-flex align-items-center">
-                    <hr class="flex-grow-1">
-                </div>
-                <div class="col-1 text-center">
-                    <a href="https://www.facebook.com" class="text-decoration-none text-reset" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </div>
-                <div class="col-1 text-center">
-                    <a href="https://www.x.com" class="text-decoration-none text-reset" target="_blank">
-                        <i class="fa-brands fa-x"></i>
-                    </a>
-                </div>
-                <div class="col-1 text-center">
-                    <a href="https://www.instagram.com" class="text-decoration-none text-reset" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-                <div class="col-4 col-md-3 d-flex align-items-center">
-                    <hr class="flex-grow-1">
-                </div>
-            </div>
-
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-4 col-md-3 d-flex align-items-center">
+            <hr class="flex-grow-1" />
+          </div>
+          <div class="col-1 text-center">
+            <a
+              href="https://www.facebook.com"
+              class="text-decoration-none text-reset"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+          <div class="col-1 text-center">
+            <a
+              href="https://www.x.com"
+              class="text-decoration-none text-reset"
+              target="_blank"
+            >
+              <i class="fa-brands fa-x"></i>
+            </a>
+          </div>
+          <div class="col-1 text-center">
+            <a
+              href="https://www.instagram.com"
+              class="text-decoration-none text-reset"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <div class="col-4 col-md-3 d-flex align-items-center">
+            <hr class="flex-grow-1" />
+          </div>
         </div>
-        <div class="row mt-0 footer-text py-o mx-0">
-            <div class="col-12 mt-1 col-md-2 offset-md-2 text-center ">
-                <a href="" class="text-decoration-none text-reset" target="_blank">Privacy Policy</a>
-            </div>
-            <div class="col-12 mt-1 col-md-2 offset-md-1 text-center">
-                <a href="" class="text-decoration-none text-reset" target="_blank">Terms of Use</a>
-            </div>
-            <div class="col-12 mt-1 mb-3 col-md-2 offset-md-1 text-center">
-                <a href="" class="text-decoration-none text-reset" target="_blank">Copyright <i class="fa-regular fa-copyright"></i>
-                    Clarity inc. 2024</a>
-
-            </div>
-            <hr>
-
+      </div>
+      <div class="row mt-0 footer-text py-o mx-0">
+        <div class="col-12 mt-1 col-md-2 offset-md-2 text-center">
+          <a href="" class="text-decoration-none text-reset" target="_blank"
+            >Privacy Policy</a
+          >
         </div>
-
-      
-
-
+        <div class="col-12 mt-1 col-md-2 offset-md-1 text-center">
+          <a href="" class="text-decoration-none text-reset" target="_blank"
+            >Terms of Use</a
+          >
+        </div>
+        <div class="col-12 mt-1 mb-3 col-md-2 offset-md-1 text-center">
+          <a href="" class="text-decoration-none text-reset" target="_blank"
+            >Copyright <i class="fa-regular fa-copyright"></i> Clarity inc.
+            2024</a
+          >
+        </div>
+        <hr />
+      </div>
     </footer>
 
     <!-- FORM MODAL -->
 
-
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel">RSVP</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <iframe class="form-format"
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSdWiFNkksHqjCmeG-xrVwiGy5jdTEvXWzxjtVBy7UMTn0ZRZg/viewform?embedded=true">
-
-                    </iframe>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">RSVP</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              class="form-format"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdWiFNkksHqjCmeG-xrVwiGy5jdTEvXWzxjtVBy7UMTn0ZRZg/viewform?embedded=true"
+            >
+            </iframe>
+          </div>
         </div>
+      </div>
     </div>
-
-
 
     <!-- CDN JSDELIVER -->
 
@@ -704,118 +1031,133 @@
 
     <!-- AI SCRIPT FROM PERPLEXITY - MAKES NAVIGATION SCROLL SMOOTHLY DOWN THE PAGE AND ADJUSTS FOR HEIGHT OF THE NAVBAR (ONLY APPLIES TO MAIN NAV LINKS)-->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Function to adjust scroll position
-            function adjustScroll(hash) {
-                const navbar = document.querySelector('nav');
-                const target = document.querySelector(hash);
-                if (target && navbar) {
-                    const navbarHeight = navbar.offsetHeight;
-                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-                    window.scrollTo({
-                        top: targetPosition - navbarHeight,
-                        behavior: 'smooth'
-                    });
-                }
-            }
-
-            // Handle initial page load with hash
-            if (window.location.hash) {
-                setTimeout(() => adjustScroll(window.location.hash), 0);
-            }
-
-            // Handle clicks on main navigation anchor links
-            document.querySelectorAll('nav a[href^="#"], .main-nav a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const hash = this.getAttribute('href');
-                    adjustScroll(hash);
-                    // Update URL without triggering a scroll
-                    history.pushState(null, null, hash);
-                });
+      document.addEventListener("DOMContentLoaded", function () {
+        // Function to adjust scroll position
+        function adjustScroll(hash) {
+          const navbar = document.querySelector("nav");
+          const target = document.querySelector(hash);
+          if (target && navbar) {
+            const navbarHeight = navbar.offsetHeight;
+            const targetPosition =
+              target.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+              top: targetPosition - navbarHeight,
+              behavior: "smooth",
             });
+          }
+        }
 
-            // Handle clicks on tab navigation links without adjustment
-            document.querySelectorAll('.nav-tabs a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const hash = this.getAttribute('href');
-                    document.querySelector(hash).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                    // Update URL without triggering a scroll
-                    history.pushState(null, null, hash);
-                });
+        // Handle initial page load with hash
+        if (window.location.hash) {
+          setTimeout(() => adjustScroll(window.location.hash), 0);
+        }
+
+        // Handle clicks on main navigation anchor links
+        document
+          .querySelectorAll('nav a[href^="#"], .main-nav a[href^="#"]')
+          .forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+              e.preventDefault();
+              const hash = this.getAttribute("href");
+              adjustScroll(hash);
+              // Update URL without triggering a scroll
+              history.pushState(null, null, hash);
             });
-        });
+          });
 
+        // Handle clicks on tab navigation links without adjustment
+        document
+          .querySelectorAll('.nav-tabs a[href^="#"]')
+          .forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+              e.preventDefault();
+              const hash = this.getAttribute("href");
+              document.querySelector(hash).scrollIntoView({
+                behavior: "smooth",
+              });
+              // Update URL without triggering a scroll
+              history.pushState(null, null, hash);
+            });
+          });
+      });
     </script>
 
     <!-- IMAGE TRACK SCRIPT FROM  https://codepen.io/Hyperplexed/full/MWXBRBp - EDITED WITH HELP FROM CLAUDE AI AS A TUTOR -->
     <script>
-        const track = document.getElementById("image-track");
+      const track = document.getElementById("image-track");
 
-        
-        const handleOnDown = e => {
-        console.log('handleOnDown');
-            track.dataset.mouseDownAt = e.clientX || (e.touches && e.touches[0].clientX);
+      const handleOnDown = (e) => {
+        console.log("handleOnDown");
+        track.dataset.mouseDownAt =
+          e.clientX || (e.touches && e.touches[0].clientX);
+      };
+
+      const handleOnUp = () => {
+        console.log("handleOnUp");
+        track.dataset.mouseDownAt = "0";
+        track.dataset.prevPercentage = track.dataset.percentage;
+      };
+
+      const handleOnMove = (e) => {
+        console.log("handleOnMove");
+        if (track.dataset.mouseDownAt === "0") return;
+
+        const mouseDelta =
+            parseFloat(track.dataset.mouseDownAt) -
+            (e.clientX || (e.touches && e.touches[0].clientX)),
+          maxDelta = window.innerWidth / 2;
+
+        const percentage = (mouseDelta / maxDelta) * -100,
+          nextPercentageUnconstrained =
+            parseFloat(track.dataset.prevPercentage || 0) + percentage,
+          nextPercentage = Math.max(
+            Math.min(nextPercentageUnconstrained, 0),
+            -100
+          );
+
+        track.dataset.percentage = nextPercentage;
+
+        track.animate(
+          {
+            transform: `translate(${nextPercentage}%, -50%)`,
+          },
+          { duration: 1200, fill: "forwards" }
+        );
+
+        for (const image of track.getElementsByClassName("image")) {
+          image.animate(
+            {
+              objectPosition: `${100 + nextPercentage}% center`,
+            },
+            { duration: 1200, fill: "forwards" }
+          );
         }
+      };
 
-        const handleOnUp = () => {
-            console.log('handleOnUp');
-            track.dataset.mouseDownAt = "0";
-            track.dataset.prevPercentage = track.dataset.percentage;
-        }
-
-        const handleOnMove = e => {
-            console.log('handleOnMove');
-            if (track.dataset.mouseDownAt === "0") return;
-
-            const mouseDelta = parseFloat(track.dataset.mouseDownAt) - (e.clientX || (e.touches && e.touches[0].clientX)),
-                maxDelta = window.innerWidth / 2;
-
-            const percentage = (mouseDelta / maxDelta) * -100,
-                nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage || 0) + percentage,
-                nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
-
-            track.dataset.percentage = nextPercentage;
-
-            track.animate({
-                transform: `translate(${nextPercentage}%, -50%)`
-            }, { duration: 1200, fill: "forwards" });
-
-            for (const image of track.getElementsByClassName("image")) {
-                image.animate({
-                    objectPosition: `${100 + nextPercentage}% center`
-                }, { duration: 1200, fill: "forwards" });
-            }
-        }
-
-        // Mouse events
-        track.onpointerdown = e => handleOnDown(e);
-        window.onpointerup = e => handleOnUp(e);
-        window.onpointermove = e => handleOnMove(e);
-
+      // Mouse events
+      if (window.PointerEvent) {
+        track.onpointerdown = (e) => handleOnDown(e);
+        window.onpointerup = (e) => handleOnUp(e);
+        window.onpointermove = (e) => handleOnMove(e);
+      } else {
         // Touch events
-        // track.ontouchstart = e => handleOnDown(e.touches[0]);
-        // window.ontouchend = e => handleOnUp(e.touches[0]);
-        // window.ontouchmove = e => handleOnMove(e.touches[0]);
+        track.ontouchstart = (e) => handleOnDown(e.touches[0]);
+        window.ontouchend = (e) => handleOnUp(e.touches[0]);
+        window.ontouchmove = (e) => handleOnMove(e.touches[0]);
+      }
 
-        // Prevent default touch behavior
-        // track.ontouchmove = e => {
-        //     e.preventDefault();
-        //     console.log('handleontouchmove');
-        //     handleOnMove(e.touches[0]);
-        // };
+      // Prevent default touch behavior
+      // track.ontouchmove = e => {
+      //     e.preventDefault();
+      //     console.log('handleontouchmove');
+      //     handleOnMove(e.touches[0]);
+      // };
 
-        // track.onpointermove = e => {
-        //     e.preventDefault();
-        //     console.log('handleontouchmove');
-        //     handleOnMove(e.touches[0]);
-        // };
-
-
+      // track.onpointermove = e => {
+      //     e.preventDefault();
+      //     console.log('handleontouchmove');
+      //     handleOnMove(e.touches[0]);
+      // };
     </script>
-</body>
-
+  </body>
 </html>
