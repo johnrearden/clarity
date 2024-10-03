@@ -792,27 +792,27 @@
         }
 
         // Mouse events
-        track.onmousedown = e => handleOnDown(e);
-        window.onmouseup = e => handleOnUp(e);
-        window.onmousemove = e => handleOnMove(e);
+        track.onpointerdown = e => handleOnDown(e);
+        window.onpointerup = e => handleOnUp(e);
+        window.onpointermove = e => handleOnMove(e);
 
         // Touch events
-        track.ontouchstart = e => handleOnDown(e.touches[0]);
-        window.ontouchend = e => handleOnUp(e.touches[0]);
-        window.ontouchmove = e => handleOnMove(e.touches[0]);
+        // track.ontouchstart = e => handleOnDown(e.touches[0]);
+        // window.ontouchend = e => handleOnUp(e.touches[0]);
+        // window.ontouchmove = e => handleOnMove(e.touches[0]);
 
         // Prevent default touch behavior
-        track.ontouchmove = e => {
-            e.preventDefault();
-            console.log('handleontouchmove');
-            handleOnMove(e.touches[0]);
-        };
+        // track.ontouchmove = e => {
+        //     e.preventDefault();
+        //     console.log('handleontouchmove');
+        //     handleOnMove(e.touches[0]);
+        // };
 
-        track.onpointermove = e => {
-            e.preventDefault();
-            console.log('handleontouchmove');
-            handleOnMove(e.touches[0]);
-        };
+        // track.onpointermove = e => {
+        //     e.preventDefault();
+        //     console.log('handleontouchmove');
+        //     handleOnMove(e.touches[0]);
+        // };
 
 
     </script>
