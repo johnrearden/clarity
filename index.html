@@ -757,15 +757,18 @@
 
         
         const handleOnDown = e => {
+        console.log('handleOnDown');
             track.dataset.mouseDownAt = e.clientX || (e.touches && e.touches[0].clientX);
         }
 
         const handleOnUp = () => {
+            console.log('handleOnUp');
             track.dataset.mouseDownAt = "0";
             track.dataset.prevPercentage = track.dataset.percentage;
         }
 
         const handleOnMove = e => {
+            console.log('handleOnMove');
             if (track.dataset.mouseDownAt === "0") return;
 
             const mouseDelta = parseFloat(track.dataset.mouseDownAt) - (e.clientX || (e.touches && e.touches[0].clientX)),
@@ -801,6 +804,13 @@
         // Prevent default touch behavior
         track.ontouchmove = e => {
             e.preventDefault();
+            console.log('handleontouchmove');
+            handleOnMove(e.touches[0]);
+        };
+
+        track.onpointermove = e => {
+            e.preventDefault();
+            console.log('handleontouchmove');
             handleOnMove(e.touches[0]);
         };
 
