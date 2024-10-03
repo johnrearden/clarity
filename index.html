@@ -793,8 +793,8 @@
 
         // Mouse events
         track.onpointerdown = e => handleOnDown(e);
-        track.onpointerup = e => handleOnUp(e);
-        track.onpointermove = e => handleOnMove(e);
+        window.onpointerup = e => handleOnUp(e);
+        window.onpointermove = e => handleOnMove(e);
 
         // Touch events
         // track.ontouchstart = e => handleOnDown(e.touches[0]);
